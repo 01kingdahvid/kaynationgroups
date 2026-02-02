@@ -245,7 +245,7 @@
 
 @media (max-width: 768px) {
   .heroWrapper {
-    grid-template-columns: 35px 1fr;
+    grid-template-columns: 40px 1fr;
   }
 
   .bgImage {
