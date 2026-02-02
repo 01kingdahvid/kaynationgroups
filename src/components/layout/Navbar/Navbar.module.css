@@ -2,10 +2,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-
   height: 4px;
   width: 0%;
-
   background: linear-gradient(90deg, #b13ac3 0%, #45f6f5 50%, #ffc938 100%);
   box-shadow:
     0 0 10px rgba(177, 58, 195, 0.317),
@@ -13,20 +11,16 @@
   transition: width 0.2s ease;
 }
 
-
 .navbar {
   position: sticky;
   top: 0;
   z-index: 999;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 28px 40px;
   background: white;
   border-bottom: 1px solid #eee;
-
   transition:
     padding 0.35s ease,
     background 0.35s ease,
@@ -36,22 +30,23 @@
 .navbar.scrolled {
   padding: 20px 40px;
   background: rgba(255, 255, 255, 0.591);
-  /* backdrop-filter: blur(14px); */
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
-
 
 .leftSection {
   display: flex;
   align-items: center;
-  gap: 60px; /* space logo → nav */
+  gap: 60px;
 }
 
 .logoWrap {
-  /* display: flex;
-  align-items: center; */
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #b13ac3, #45f6f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .navLinks {
@@ -67,12 +62,29 @@
   cursor: pointer;
   text-decoration: none;
   color: #111;
-  transition: 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #b13ac3, #45f6f5);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navLinks a:hover::after {
+  width: 100%;
 }
 
 .navLinks a:hover,
 .dropdownLink:hover {
   color: #b13ac3;
+  transform: translateY(-2px);
 }
 
 .mailSection {
@@ -101,46 +113,495 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 20px;
   color: white;
-
   background: #b13ac3;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .mailIcon:hover {
   animation: mailGradient 3s linear infinite;
+  transform: scale(1.1) rotate(10deg);
 }
 
 @keyframes mailGradient {
-  0% {
-    background: #b13ac3;
-  }
-  33% {
-    background: #ffc938;
-  }
-  66% {
-    background: #45f6f5;
-  }
-  100% {
-    background: #b13ac3;
-  }
+  0% { background: #b13ac3; }
+  33% { background: #ffc938; }
+  66% { background: #45f6f5; }
+  100% { background: #b13ac3; }
 }
 
 .mobileMenuBtn {
   display: none;
 }
 
-.mobileNav {
+/* ========================================
+   🌊 PREMIUM WATER DRAWER
+   ======================================== */
+
+.waterDrawer :global(.ant-drawer-content) {
+  background: transparent !important;
+}
+
+.waterDrawer :global(.ant-drawer-header) {
+  background: #ffc938 !important;
+  border-bottom: none !important;
+  padding: 5px;
+  z-index: 100;
+}
+
+.waterDrawer :global(.ant-drawer-body) {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.drawerCloseBtn {
+  background: #ffc938;
+  color: #111;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(255, 201, 56, 0.4);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.drawerCloseBtn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.drawerCloseBtn:hover::before {
+  width: 100px;
+  height: 100px;
+}
+
+.drawerCloseBtn:hover {
+  transform: scale(1.15) rotate(90deg);
+  box-shadow: 0 12px 32px rgba(255, 201, 56, 0.6);
+}
+
+.drawerInner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* 🌊 WATER RISE WITH LIQUID WAVE MASK */
+.waterRise {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: #ffc938;
+  z-index: 1;
+  animation: waterRiseAnim 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes waterRiseAnim {
+  0% {
+    bottom: -100%;
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    bottom: 0%;
+    filter: brightness(1);
+  }
+}
+
+/* DRAIN ANIMATION */
+.waterRise.drain {
+  animation: waterDrainAnim 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+}
+
+@keyframes waterDrainAnim {
+  0% {
+    bottom: 0%;
+    opacity: 1;
+  }
+  100% {
+    bottom: -100%;
+    opacity: 0.8;
+  }
+}
+
+/* 🌊 LIQUID WAVE MASK */
+.waveMask {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background: inherit;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.waveMask::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 40%,
+    #ffc938 40%,
+    #ffc938 100%
+  );
+  animation: wave 8s ease-in-out infinite;
+}
+
+.waveMask::after {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 35%,
+    rgba(255, 201, 56, 0.7) 35%,
+    rgba(255, 201, 56, 0.7) 100%
+  );
+  animation: wave 6s ease-in-out infinite reverse;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(10%) translateY(-5%) rotate(2deg);
+  }
+  50% {
+    transform: translateX(0) translateY(5%) rotate(-1deg);
+  }
+  75% {
+    transform: translateX(-10%) translateY(-3%) rotate(1deg);
+  }
+}
+
+/* 🌊 PARALLAX WATER SURFACE */
+.waterSurface {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(180deg, 
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 20%,
+      transparent 80%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+  z-index: 3;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+}
+
+/* 🌊 RIPPLE EFFECTS */
+.rippleContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.ripple {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  animation: rippleExpand 4s ease-out infinite;
+}
+
+@keyframes rippleExpand {
+  0% {
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    width: 600px;
+    height: 600px;
+    opacity: 0;
+  }
+}
+
+/* 🌊 GLASS BLUR OVERLAY */
+.glassOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(0.5px);
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* 🌊 CONTENT LAYERS */
+.drawerContent {
+  position: relative;
+  z-index: 10;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
+
+/* 🎬 STAGGERED NAV REVEAL */
+.drawerNav {
+  flex: 1;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 20px;
+}
+
+.navLink {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #111;
+  opacity: 0;
+  transform: translateY(60px) rotateX(20deg);
+  animation: navLinkReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  position: relative;
+  padding: 8px 20px;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes navLinkReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) rotateX(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+
+/* 🧲 MAGNETIC HOVER */
+.navLink:hover {
+  color: white;
+  transform: translateY(-4px) scale(1.05);
+  /* text-shadow: 0 10px 30px rgba(177, 58, 195, 0.3); */
+}
+
+.navLink::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #b13ac3, #45f6f5);
+  transform: translateX(-50%);
+  transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-radius: 2px;
+}
+
+.navLink:hover::before {
+  width: 100%;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(177, 58, 195, 0.2), transparent);
+  transform: translate(-50%, -50%);
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.navLink:hover::after {
+  width: 200%;
+  height: 200%;
+}
+
+/* 🎬 FOOTER ANIMATION */
+.drawerFooter {
+  background: #b13ac3;
+  color: white;
+  padding: 20px 20px;
+  position: relative;
+  animation: footerSlideUp 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+@keyframes footerSlideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.drawerFooter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(69, 246, 245, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 201, 56, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.footerGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.footerCol {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: footerColFade 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes footerColFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footerCol span {
+  font-size: 1.8rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.footerCol p {
+  font-size: 0.95rem;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.footerCol small {
+  opacity: 0.8;
+  font-size: 0.85rem;
+}
+
+/* 🎬 SOCIAL ICONS */
+.drawerFooterSocialIcons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.socialIcon:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px) scale(1.1) rotate(10deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 🌊 CLOSING ANIMATION */
+.waterDrawer.closing .drawerInner {
+  animation: drawerSlideOut 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+}
+
+@keyframes drawerSlideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0.5;
+  }
+}
+
+/* ========================================
+   📱 RESPONSIVE
+   ======================================== */
 
 @media (max-width: 900px) {
   .navLinks,
@@ -148,18 +609,19 @@
     display: none;
   }
 
-  .mailIcon{
-    display: block;
-  }
-
   .mobileMenuBtn {
     display: flex;
     border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 
-  .mobileMenuBtn:hover{
+  .mobileMenuBtn:hover {
     border: none !important;
-
+    background-color: transparent !important;
+    transform: scale(1.1) rotate(90deg);
   }
 
   .navbar {
@@ -167,9 +629,42 @@
   }
 
   .navbar.scrolled {
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.591);
-  /* backdrop-filter: blur(14px); */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.591);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+
+  .navLink {
+    font-size: 2rem;
+  }
 }
+
+@media (max-width: 768px) {
+  .navLink {
+    font-size: 1.2rem;
+  }
+
+  .logoWrap {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navLink {
+    font-size: 1rem;
+    padding: 6px 16px;
+  }
+
+  .drawerFooter {
+    padding: 45px 16px;
+    text-align: left;
+  }
+
+  .footerCol {
+    gap: 2.75rem;
+  }
+
+  .footerCol span {
+    font-size: 1.5rem;
+  }
 }
