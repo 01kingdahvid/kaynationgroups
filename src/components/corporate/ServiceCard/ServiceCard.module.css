@@ -156,6 +156,9 @@
     width: 100%;
     max-width: 100%;
     flex-direction: column;
+     justify-content: center;
+  align-items: center;
+  text-align: left;
   }
 
   /* NEW: image + text row */
