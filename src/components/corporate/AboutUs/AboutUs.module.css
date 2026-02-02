@@ -1,7 +1,7 @@
 .aboutSection {
   padding: 0 6%;
   background: #ffffff;
-  margin-top: -3rem;
+  margin-top: 3rem;
 }
 
 /* ===== LAYOUT ===== */
@@ -191,7 +191,7 @@
    ========================= */
 @media (max-width: 1200px) {
   .aboutSection {
-    padding: 100px 5%;
+    padding: 0 5%;
   }
 
   .container {
@@ -230,7 +230,8 @@
    ========================= */
 @media (max-width: 768px) {
   .aboutSection {
-    padding: 80px 5%;
+    padding: 0 5%;
+    margin-top: 0;
   }
 
   .container {
@@ -291,7 +292,8 @@
    ========================= */
 @media (max-width: 480px) {
   .aboutSection {
-    padding: 60px 18px;
+    padding: 0 18px;
+    margin-top: 3rem;
   }
 
   .amoeba {
