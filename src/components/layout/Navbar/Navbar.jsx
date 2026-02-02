@@ -146,9 +146,11 @@ export default function Navbar() {
         placement="right"
         open={open}
         onClose={handleClose}
-        width="100%"
         rootClassName={`${styles.waterDrawer} ${isClosing ? styles.closing : ''}`}
-        bodyStyle={{ padding: 0 }}
+        styles={{
+          body: { padding: 0 },
+          content: { width: "100%" }
+        }}
         closeIcon={<div className={styles.drawerCloseBtn}>×</div>}
       >
         <div
@@ -232,7 +234,7 @@ export default function Navbar() {
                 </div>
 
                 <div className={styles.footerCol} style={{ animationDelay: '1.5s' }}>
-                  <span> <NumberOutlined/></span>
+                  <span> <NumberOutlined /></span>
                   <div className={styles.footerRow}>
                     <div className={styles.drawerFooterSocialIcons}>
                       <a href="#" className={styles.socialIcon}><FacebookFilled /></a>

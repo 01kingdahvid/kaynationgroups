@@ -41,7 +41,10 @@ export default function ServiceCards() {
                             <div className={styles.textWrap}>
                                 <h1 className={styles.title}>{service.title}</h1>
                                 <p className={styles.desc}>{service.desc}</p>
-                                <button className={styles.cta}>Find Out More</button>
+                                <div className="" style={{alignContent: "center", textAlign: "center"}}>
+                                    <button className={styles.cta}>Find Out More</button>
+                                </div>
+
                             </div>
                         </div>
 

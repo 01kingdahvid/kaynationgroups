@@ -36,6 +36,7 @@
   border-radius: 50%;
   border: 8px solid #eee;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .image {
@@ -46,25 +47,33 @@
 .title {
   font-size: 22px;
   font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .desc {
   font-size: 15px;
-  line-height: 1.6;
+  font-weight: 400;
+  color: rgb(53, 52, 52);
+  line-height: 1.7;
   opacity: 0.8;
+  margin-bottom: 1rem;
 }
 
 /* CTA */
 .cta {
   width: fit-content;
-  padding: 12px 22px;
+  padding: 1.2rem 3rem;
+  text-transform: uppercase;
   border-radius: 999px;
   border: 1px solid #b13ac3;
   background: #b13ac3;
   color: white;
-  font-weight: 600;
+  font-weight: 900;
+  line-height: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
+  text-shadow: 0 1px 2px rgb(0, 0, 0);
 }
 
 .cta:hover {
@@ -164,9 +173,42 @@
     flex-direction: column;
     gap: 20px;
   }
-  .card{
+  .card {
     width: 100%;
-    max-width: 40%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* NEW: image + text row */
+  .cardTop {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .imageWrap {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .textWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .title,
+  .desc {
+    margin-bottom: 0;
   }
 
   .flowItem {
@@ -177,8 +219,6 @@
     /* transform: rotate(90deg); */
     margin: 20px 0;
   }
-
-  
 }
 
 @media (max-width: 640px) {
@@ -186,8 +226,8 @@
     width: 100%;
     max-width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
     text-align: left;
     padding: 1rem;
   }
@@ -200,15 +240,18 @@
   }
 
   .imageWrap {
-    width: 100px;
-    min-width: 100px;
-    height: 100px;
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
     border-radius: 50%;
   }
 
-  .textWrap {
+   .textWrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
     gap: 6px;
   }
 
@@ -223,6 +266,8 @@
   }
 
   .cta {
-    margin-top: 10px;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 999px;
   }
 }
