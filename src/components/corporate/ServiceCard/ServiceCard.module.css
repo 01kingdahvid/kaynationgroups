@@ -6,6 +6,7 @@
   align-items: center;
   gap: 40px;
   flex-wrap: nowrap;
+  margin-top: -3rem;
 }
 
 /* FLOW ITEM (card + connector) */

@@ -1,6 +1,7 @@
 .aboutSection {
-  padding: 120px 6%;
+  padding: 0 6%;
   background: #ffffff;
+  margin-top: -3rem;
 }
 
 /* ===== LAYOUT ===== */
@@ -10,6 +11,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+  width: 100%;
 }
 
 /* ===== IMAGE AMOEBA ===== */
@@ -17,6 +19,8 @@
 .imageWrap {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .amoeba {
@@ -38,15 +42,11 @@
 
 /* ===== CONTENT ===== */
 
-.content {
-  max-width: 580px;
-}
-
 .headingRow {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .headingBorder {
@@ -55,8 +55,9 @@
 }
 
 .headingBorder h1 {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
   letter-spacing: -1px;
 }
 
@@ -73,10 +74,25 @@
 
 /* ===== TEXT ===== */
 
+.content {
+  max-width: 580px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .desc {
   font-size: 18px;
   line-height: 1.9;
   color: #555;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 520px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* ===== STATS ===== */
@@ -122,8 +138,8 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0a2540, #2c7be5);
-  opacity: 0.15;
+  background: linear-gradient(135deg, #b13ac3, #b13ac3);
+  opacity: 0.8;
   animation: float1 6s ease-in-out infinite;
 }
 
@@ -132,8 +148,8 @@
   width: 75%;
   height: 75%;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2c7be5, #00c6ff);
-  opacity: 0.2;
+  background: linear-gradient(135deg, #45f6f5, #ffca3871);
+  opacity: 0.8;
   animation: float2 7s ease-in-out infinite;
 }
 
@@ -145,45 +161,168 @@
 /* ===== ANIMATIONS ===== */
 
 @keyframes float1 {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes float2 {
-  0% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(12px) scale(1.05); }
-  100% { transform: translateY(0px) scale(1); }
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(12px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
 }
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 1100px) {
+/* =========================
+   TABLET (768px — 1200px)
+   ========================= */
+@media (max-width: 1200px) {
+  .aboutSection {
+    padding: 100px 5%;
+  }
+
+  .container {
+    gap: 60px;
+  }
+
+  .amoeba {
+    width: 440px;
+    height: 440px;
+  }
+
+  .headingBorder h1 {
+    font-size: 26px;
+  }
+
+  .desc {
+    font-size: 17px;
+  }
+
+  .stats {
+    gap: 30px;
+  }
+
+  .circleBg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .statCard h2 {
+    font-size: 34px;
+  }
+}
+
+/* =========================
+   SMALL TABLET (480px — 768px)
+   ========================= */
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 80px 5%;
+  }
+
   .container {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 50px;
+  }
+
+  .imageWrap {
+    order: 1;
+  }
+
+  .content {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .amoeba {
+    width: 440px;
+    height: 440px;
+    position: relative;
+    right: 2.5rem;
   }
 
   .headingRow {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    justify-content: left;
+    align-items: start;
   }
 
-  .headingBorder {
-    border-left: none;
-    border-top: 5px solid #0a2540;
-    padding-left: 0;
-    padding-top: 14px;
+  .headingBorder h1 {
+    font-size: 24px;
+  }
+
+  .desc {
+    font-size: 16px;
+    line-height: 1.8;
   }
 
   .stats {
     flex-direction: column;
     align-items: center;
+    margin-top: 70px;
+    gap: 30px;
+  }
+
+  .circleBg {
+    width: 130px;
+    height: 130px;
+  }
+
+  .statCard h2 {
+    font-size: 30px;
+  }
+}
+
+/* =========================
+   MOBILE (< 480px)
+   ========================= */
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 60px 18px;
   }
 
   .amoeba {
-    width: 380px;
-    height: 380px;
+    width: 360px;
+    height: 360px;
+    position: relative;
+    right: 3.5rem;
+  }
+
+  .headingBorder h1 {
+    font-size: 20px;
+  }
+
+  .particles {
+    width: 80px;
+  }
+
+  .desc {
+    font-size: 15px;
+  }
+
+  .circleBg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .statCard h2 {
+    font-size: 24px;
+  }
+
+  .statCard p {
+    font-size: 14px;
   }
 }
