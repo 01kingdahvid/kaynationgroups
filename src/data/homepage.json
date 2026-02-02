@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "Building Sustainable Futures Across Industries",
+    "subtitle": "Kay Groups operates across agriculture and education sectors, delivering innovation, sustainability, and growth.",
+    "ctaPrimary": "Explore Companies",
+    "ctaSecondary": "Book Consultation"
+  },
+  "eduHero": {
+    "title": "Kay Edu Services",
+    "subtitle": "Professional academic support, career development, and global education pathways."
+  },
+  "farmHero": {
+    "title": "Kay Farms",
+    "subtitle": "Sustainable agriculture, modern crop production, and agribusiness partnerships."
+  }
+}

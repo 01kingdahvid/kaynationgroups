@@ -1,0 +1,16 @@
+/* src/styles/variables.css */
+:root {
+  --white: #ffffff;
+
+  /* StudyNow inspired + your brand mix */
+  --primary-green: #0A4D2E;
+  --accent-green: #16A34A;
+  --accent-red: #EF4444;
+  --accent-orange: #F97316;
+
+  --text-dark: #1F2937;
+  --text-light: #6B7280;
+  --border-light: #E5E7EB;
+
+  --max-width: 1280px;
+}

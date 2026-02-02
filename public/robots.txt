@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kaygroups.com/sitemap.xml

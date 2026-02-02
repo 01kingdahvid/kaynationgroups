@@ -1,0 +1,267 @@
+/* =============================
+   HERO WRAPPER
+============================= */
+.heroWrapper {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  overflow: hidden;
+  --x: 50%;
+  --y: 50%;
+}
+
+/* =============================
+   FLOATING SOCIAL BAR
+============================= */
+.socialPanel {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  z-index: 5;
+  box-shadow: 0 0 25px #4545451f;
+}
+
+.verticalText {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #a1a1a1;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.socialIcons a {
+  font-size: 22px;
+  color: #a1a1a1;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: iconIn 0.6s ease forwards;
+}
+
+.socialIcons a:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.socialIcons a:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.socialIcons a:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.socialIcons a:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.socialIcons a:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+@keyframes iconIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.socialIcons a:hover {
+  transform: scale(1.2);
+  color: #b13ac3;
+}
+
+/* =============================
+   HERO CONTENT
+============================= */
+.heroContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cursorGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    500px circle at var(--x) var(--y),
+    rgba(177, 58, 195, 0.25),
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.bgImage {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, white, rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 3;
+  color: black;
+  padding: 0 80px 0 3rem;
+  max-width: 500px;
+  justify-content: start;
+}
+
+.heroInner h1 {
+  font-size: 50px;
+  line-height: 1.1;
+  animation: textReveal 0.9s ease;
+  text-align: left;
+}
+
+.heroInner span {
+  color: #45f6f5;
+  text-align: left;
+}
+
+.heroInner p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #454545;
+  opacity: 0;
+  line-height: 1.8rem;
+  word-break: keep-all;
+  word-wrap: break-word;
+  text-align: left;
+  animation: textReveal 0.9s ease 0.3s forwards;
+}
+
+@keyframes textReveal {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.ctaBtn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 40px;
+  border-radius: 999px;
+  background-color: #b13ac3;
+  color: white;
+  box-shadow: #454545;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(18, 21, 21, 0.6);
+}
+
+.ctaBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(69, 246, 245, 0.6);
+}
+
+/* =============================
+   WAVE FREQUENCY ANIMATION
+============================= */
+.waveSection {
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  top: -6.3rem;
+  z-index: 1;
+}
+
+.waveSection svg {
+  width: 200%;
+  height: 100px;
+  animation: waveMove 14s linear infinite;
+}
+
+.wave1 {
+  
+  fill: #45f6f5;
+  animation: waveFloat 8s ease-in-out infinite;
+}
+
+.wave2 {
+  fill: #ffc938;
+  animation: waveFloat 10s ease-in-out infinite reverse;
+}
+
+.wave3 {
+  fill: #b13ac3;
+  animation: waveFloat 12s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+/* =============================
+   BREAKPOINTS
+============================= */
+
+/* Large Desktop */
+@media (max-width: 900px) {
+  .heroWrapper {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .heroInner h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroWrapper {
+    grid-template-columns: 35px 1fr;
+  }
+
+  .bgImage {
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.461));
+    z-index: 1;
+  }
+
+  .heroInner {
+    padding: 60px 24px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,26 @@
+.kayfarms_hero {
+  padding: 80px 20px;
+  background: #fff7f5;
+}
+
+.kayfarms_inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.kayfarms_inner h2 {
+  font-size: 42px;
+  color: #c62828;
+}
+
+.kayfarms_inner p {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #555;
+}
+
+.kayfarms_actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
