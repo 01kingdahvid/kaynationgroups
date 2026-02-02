@@ -21,64 +21,73 @@ const services = [
 
 export default function ServiceCards() {
     return (
-        <section className={styles.wrapper}>
-            {services.map((service, index) => (
-                <div key={index} className={styles.flowItem}>
+        <>
+            <section className={styles.wrapper}>
+                {services.map((service, index) => (
+                    <div key={index} className={styles.flowItem}>
 
-                    {/* CARD */}
-                    <div className={styles.card}>
+                        {/* CARD */}
+                        <div className={styles.card}>
 
-                        <div className={styles.cardTop}>
-                            <div className={styles.imageWrap}>
-                                <Image
-                                    src={service.img}
-                                    alt={service.title}
-                                    fill
-                                    className={styles.image}
-                                />
+                            <div className={styles.cardTop}>
+                                <div className={styles.imageWrap}>
+                                    <Image
+                                        src={service.img}
+                                        alt={service.title}
+                                        fill
+                                        className={styles.image}
+                                    />
+                                </div>
+
+                                <div className={styles.textWrap}>
+                                    <h1 className={styles.title}>{service.title}</h1>
+                                    <p className={styles.desc}>{service.desc}</p>
+                                    <div className="" style={{ alignContent: "center", textAlign: "center" }}>
+                                        <button className={styles.cta}>Find Out More</button>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <div className={styles.textWrap}>
-                                <h1 className={styles.title}>{service.title}</h1>
-                                <p className={styles.desc}>{service.desc}</p>
-                                <div className="" style={{alignContent: "center", textAlign: "center"}}>
-                                    <button className={styles.cta}>Find Out More</button>
+
+                        </div>
+
+
+                        {/* CONNECTOR */}
+                        {index !== services.length - 1 && (
+                            <div className={styles.connector}>
+
+                                {/* SVG CURVE */}
+                                <svg
+                                    className={styles.svg}
+                                    viewBox="0 0 200 120"
+                                    preserveAspectRatio="none"
+                                >
+                                    <path
+                                        d="M10 60 C 60 0, 140 120, 190 60"
+                                        className={styles.svgPath}
+                                    />
+                                </svg>
+
+                                {/* GLASS PARTICLES */}
+                                <div className={styles.glassParticles}>
+                                    {[...Array(1)].map((_, i) => (
+                                        <span key={i} className={styles.glassDot}></span>
+                                    ))}
                                 </div>
 
                             </div>
-                        </div>
-
-
+                        )}
                     </div>
+                ))}
+            </section>
 
-
-                    {/* CONNECTOR */}
-                    {index !== services.length - 1 && (
-                        <div className={styles.connector}>
-
-                            {/* SVG CURVE */}
-                            <svg
-                                className={styles.svg}
-                                viewBox="0 0 200 120"
-                                preserveAspectRatio="none"
-                            >
-                                <path
-                                    d="M10 60 C 60 0, 140 120, 190 60"
-                                    className={styles.svgPath}
-                                />
-                            </svg>
-
-                            {/* GLASS PARTICLES */}
-                            <div className={styles.glassParticles}>
-                                {[...Array(1)].map((_, i) => (
-                                    <span key={i} className={styles.glassDot}></span>
-                                ))}
-                            </div>
-
-                        </div>
-                    )}
-                </div>
-            ))}
-        </section>
+            {/* REAL SVG WAVEFORM */}
+            <div className={styles.waveSection}>
+                <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+                    <path className={styles.wave3}
+                        d="M0,140 C180,60 380,220 680,140 C980,60 1200,220 1440,140 L1440,200 L0,200 Z" />
+                </svg>
+            </div></>
     );
 }

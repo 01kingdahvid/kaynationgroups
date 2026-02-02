@@ -63,7 +63,7 @@
 /* CTA */
 .cta {
   width: fit-content;
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 2rem;
   text-transform: uppercase;
   border-radius: 999px;
   border: 1px solid #b13ac3;
@@ -164,6 +164,47 @@
   }
 }
 
+/* =============================
+   WAVE FREQUENCY ANIMATION
+============================= */
+.waveSection {
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.waveSection svg {
+  width: 200%;
+  height: 100px;
+  animation: waveMove 14s linear infinite;
+}
+
+.wave3 {
+  fill: #f1f1f1;
+  animation: waveFloat 12s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+
 /* ========================= */
 /* TABLET + MOBILE */
 /* ========================= */
@@ -246,7 +287,7 @@
     border-radius: 50%;
   }
 
-   .textWrap {
+  .textWrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,7 +308,16 @@
 
   .cta {
     width: fit-content;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
     border-radius: 999px;
+    border: 1px solid #b13ac3;
+    background: #b13ac3;
+    color: white;
+    font-weight: 900;
+    line-height: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-shadow: 0 1px 2px rgb(0, 0, 0);
   }
 }

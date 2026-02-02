@@ -159,14 +159,15 @@
 .ctaBtn {
   display: inline-block;
   margin-top: 30px;
-  padding: 16px 40px;
+  padding: 1.2rem 40px;
   border-radius: 999px;
   background-color: #b13ac3;
-  color: white;
-  box-shadow: #454545;
-  font-weight: 800;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 16px;
+  text-shadow: 0 1px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   transition: all 0.3s ease;
   box-shadow: 0 0 25px rgba(18, 21, 21, 0.6);
 }
@@ -194,7 +195,6 @@
 }
 
 .wave1 {
-  
   fill: #45f6f5;
   animation: waveFloat 8s ease-in-out infinite;
 }
