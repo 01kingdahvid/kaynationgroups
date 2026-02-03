@@ -117,7 +117,10 @@
 
 .statCard p {
   margin-top: 14px;
-  color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 24px;
 }
 
 /* ===== ANIMATED DOUBLE CIRCLES ===== */
@@ -315,12 +318,23 @@
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
-    gap: 30px;
+    max-width: fit-content;
+    width: 100% !important;
+  }
+
+  .statCard {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    gap: 1rem;
   }
 
   .circleBg {
     width: 130px;
     height: 130px;
+    max-width: 100%;
+    overflow-y: hidden !important;
   }
 
   .statCard h2 {

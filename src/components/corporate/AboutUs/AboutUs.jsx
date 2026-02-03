@@ -60,10 +60,34 @@ export default function AboutUs() {
 
                 {/* STATS */}
                 <div className={styles.stats}>
-                    <Stat number="3000" label="Students Enrolled" />
-                    <Stat number="150" label="Partner Universities" />
-                    <Stat number="99%" label="Visa Success Rate" />
+                    <Stat
+                        number="3000"
+                        label={
+                            <>
+                                Students <br /> Enrolled
+                            </>
+                        }
+                    />
+
+                    <Stat
+                        number="150"
+                        label={
+                            <>
+                                Partner <br /> Universities
+                            </>
+                        }
+                    />
+
+                    <Stat
+                        number="99%"
+                        label={
+                            <>
+                                Percentage of Visa <br /> Success
+                            </>
+                        }
+                    />
                 </div>
+
             </section>
 
             {/* REAL SVG WAVEFORM */}
