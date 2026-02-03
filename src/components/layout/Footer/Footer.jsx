@@ -46,7 +46,7 @@ export default function Footer() {
 
         {/* LEFT ADDRESS */}
         <div className={styles.addressBlock}>
-          <EnvironmentOutlined className={styles.iconLarge} aria-hidden />
+          <EnvironmentOutlined className={styles.iconMedium} aria-hidden />
           <div>
             <p>
               6th Floor, First Central 200, 2 Lakeside Drive,
@@ -68,7 +68,7 @@ export default function Footer() {
             <MailOutlined className={styles.iconMedium} />
             <div>
               <p className={styles.email}>info@studynow.org.uk</p>
-              <span>Email Us</span>
+              <span style={{color: "#bbbabe"}}>Email Us</span>
             </div>
           </div>
 
@@ -114,8 +114,8 @@ export default function Footer() {
       <div className={styles.bottom}>
         <p>Copyright 2026 © Kaynation Groups. All Rights Reserved</p>
         <p>
-          Website designed and developed by{" "}
-          <span className={styles.brand}>King Devid Tech Solution</span>
+          Website developed by{" "}
+          <a href="" className={styles.brand}>King Devid Tech Solution</a>
         </p>
       </div>
     </footer>

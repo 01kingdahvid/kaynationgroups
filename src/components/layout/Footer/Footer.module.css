@@ -73,7 +73,8 @@
 .visitLink {
   display: inline-block;
   margin-top: 10px;
-  opacity: 0.8;
+  color: #bbbabe;
+  text-decoration: none;
 }
 
 /* CONTACT */
@@ -97,8 +98,8 @@
 }
 
 .connectText {
-  opacity: 0.8;
   margin-bottom: 14px;
+  color: #bbbabe;
 }
 
 .socialRow {
