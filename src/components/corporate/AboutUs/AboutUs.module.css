@@ -195,6 +195,7 @@
   height: 160px;
   overflow: hidden;
   position: relative;
+  top: 4.2rem;
   z-index: 1;
 }
 
