@@ -2,6 +2,7 @@ import Navbar from '@/components/layout/Navbar/Navbar';
 import KayGroupsHero from '@/components/corporate/KayGroupsHero/KayGroupsHero';
 import ServiceCards from '@/components/corporate/ServiceCard/ServiceCard';
 import AboutUs from '@/components/corporate/AboutUs/AboutUs';
+import TestimonialSection from '@/components/corporate/TestimonialSection/TestimonialSection';
 // import EduHero from '@/components/kayEdu/EduHero/EduHero';
 // import FarmHero from '@/components/kayFarms/FarmHero/FarmHero';
 
@@ -12,6 +13,7 @@ export default function Home() {
       <KayGroupsHero />
       <ServiceCards/>
       <AboutUs/>
+      <TestimonialSection/>
       {/* <EduHero /> */}
       {/* <FarmHero /> */}
     </>
