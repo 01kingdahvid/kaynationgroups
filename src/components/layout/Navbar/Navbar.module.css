@@ -642,11 +642,11 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 40px 20px !important;
+    padding: 35px 20px !important;
   }
 
   .navbar.scrolled {
-    padding: 30px 20px !important;
+    padding: 25px 20px !important;
     background: rgba(255, 255, 255, 0.591);
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   }
