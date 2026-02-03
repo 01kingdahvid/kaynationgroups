@@ -10,21 +10,21 @@ const testimonials = [
         name: "David Okoye",
         location: "Lagos, Nigeria",
         work: "Software Engineer - UK",
-        image: "/images/students/student1.jpg",
+        image: "/images/shared/hero-section-bg1.jpg",
         text: "Study Now made my UK admission seamless. From documentation to visa preparation, everything was handled professionally."
     },
     {
         name: "Amaka Nwosu",
         location: "Abuja, Nigeria",
         work: "Nurse - Manchester",
-        image: "/images/students/student2.jpg",
+        image: "/images/shared/hero-section-bg1.jpg",
         text: "Their guidance helped me secure admission and scholarship. The team truly cares about student success."
     },
     {
         name: "Tunde Balogun",
         location: "Ibadan, Nigeria",
         work: "Data Analyst - London",
-        image: "/images/students/student3.jpg",
+        image: "/images/shared/hero-section-bg1.jpg",
         text: "I never imagined studying abroad could be this smooth. Study Now exceeded my expectations."
     }
 ];
@@ -46,13 +46,13 @@ export default function TestimonialSection() {
     const t = testimonials[index];
 
     const particles = useMemo(() => {
-  return Array.from({ length: 30 }).map((_, i) => ({
-    id: i,
-    cx: (i * 37) % 200,
-    cy: (i * 53) % 120,
-    r: ((i % 3) + 1) * 0.8
-  }));
-}, []);
+        return Array.from({ length: 30 }).map((_, i) => ({
+            id: i,
+            cx: (i * 37) % 200,
+            cy: (i * 53) % 120,
+            r: ((i % 3) + 1) * 0.8
+        }));
+    }, []);
 
 
     return (
@@ -90,11 +90,11 @@ export default function TestimonialSection() {
                 <div className={styles.carousel}>
 
                     {/* PARTICLES */}
-                   <svg className={styles.particles} viewBox="0 0 200 120">
-  {particles.map(p => (
-    <circle key={p.id} cx={p.cx} cy={p.cy} r={p.r} />
-  ))}
-</svg>
+                    <svg className={styles.particles} viewBox="0 0 200 120">
+                        {particles.map(p => (
+                            <circle key={p.id} cx={p.cx} cy={p.cy} r={p.r} />
+                        ))}
+                    </svg>
 
 
                     <div className={styles.card}>
