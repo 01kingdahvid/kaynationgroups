@@ -7,7 +7,7 @@ export default function ContactUsPage () {
       <Navbar />
       <PageHero
         title='Contact Us'
-        subtitle='How we can help you'
+        subtitle='Get in touch to start your journey'
         backgroundImage='/images/shared/services1.avif'
         showShareIcons={true}
       />

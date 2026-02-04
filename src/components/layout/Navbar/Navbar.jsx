@@ -113,7 +113,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
-            <Link href="/services">Our Services</Link>
+            <Link href="/services">Services</Link>
             <Link href="/contact">Contact</Link>
           </nav>
         </div>
@@ -188,7 +188,7 @@ export default function Navbar() {
           <div className={styles.drawerContent}>
             {/* NAV SECTION WITH STAGGERED REVEAL */}
             <div className={styles.drawerNav}>
-              {['Home', 'About', 'Programs', 'Our Services', 'Contact'].map((item, index) => (
+              {['Home', 'About Us', 'Programs', 'Services', 'Contact'].map((item, index) => (
                 <Link
                   key={item}
                   href={item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`}
