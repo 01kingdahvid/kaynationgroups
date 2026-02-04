@@ -35,7 +35,7 @@
   background: linear-gradient(
     90deg,
     rgba(255,255,255,0.96) 0%,
-    rgba(255, 255, 255, 0.961) 25%,
+    rgba(255,255,255,0.85) 25%,
     rgba(255,255,255,0.55) 45%,
     rgba(255,255,255,0.15) 65%,
     rgba(255,255,255,0) 85%
@@ -60,17 +60,6 @@
   align-items: center;
   gap: 24px;
   max-width: 620px;
-   inset: 0;
-  background: linear-gradient(
-    90deg,
-    
-    rgba(255,255,255,0.55) 45%,
-    rgba(255,255,255,0.15) 65%,
-    rgba(255,255,255,0) 85%
-    rgba(255,255,255,0.55) 45%,
-    rgba(255,255,255,0.15) 65%,
-    rgba(255,255,255,0) 85%
-  );
 }
 
 /* =============================
@@ -126,8 +115,7 @@
 
 .shareText {
   font-size: 14px;
-  color: white;
-  text-shadow: 0 1px 2px #eee;
+  color: #888;
 }
 
 .icons {
@@ -136,8 +124,7 @@
 }
 
 .icons a {
-  color: white;
-  text-shadow: 0 1px 2px black;
+  color: #9b9b9b;
   font-size: 18px;
   transition: all 0.25s ease;
 }
