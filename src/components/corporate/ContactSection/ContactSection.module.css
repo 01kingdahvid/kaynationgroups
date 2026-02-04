@@ -8,34 +8,84 @@
 }
 
 .container {
-  /* max-width: 1200px; */
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   margin: 0 auto;
   background: #a93ad4;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  padding: 5rem 3rem;
+  padding: 0 3rem 5rem 3rem;
   position: relative;
   overflow: hidden;
 }
 
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #10b981);
+.contentRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding-top: 2rem;
+}
+
+/* =============================
+   WAVE FREQUENCY ANIMATION
+============================= */
+.waveSection {
+  width: calc(100% + 6rem);
+  margin-left: -3rem;
+  margin-right: -3rem;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  bottom: 4.5rem;
+}
+
+.waveSection svg {
+  width: 200%;
+  height: 120px;
+  animation: waveMove 14s linear infinite;
+  display: block;
+}
+
+.wave1 {
+  fill: #45f6f5;
+  animation: waveFloat 8s infinite;
+}
+
+.wave2 {
+  fill: #ffc938;
+  animation: waveFloat 10s infinite reverse;
+}
+
+.wave3 {
+  fill: #b13ac3;
+  animation: waveFloat 12s infinite;
+}
+
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
 }
 
 .header {
   text-align: left;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   padding: 0 2rem;
   max-width: 520px;
+  flex: 1;
 }
 
 .heading {
@@ -76,15 +126,11 @@
   margin-top: 1rem;
 }
 
-.separator {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
-  margin: 2.5rem 0;
-}
-
 .form {
   max-width: 1000px;
   margin: 0 auto;
+  flex: 1;
+  /* max-width: 600px; */
 }
 
 .successMessage {
@@ -129,7 +175,7 @@
 .label {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #1e293b;
+  color: white;
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
@@ -150,8 +196,8 @@
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
-  background: white;
-  color: #1e293b;
+  background: #872faa;
+  color: white;
 }
 
 .input:focus,
@@ -165,7 +211,7 @@
 
 .input::placeholder,
 .textarea::placeholder {
-  color: #94a3b8;
+  color: white;
 }
 
 .textarea {
@@ -185,9 +231,9 @@
   border: 2px solid #e2e8f0;
   border-radius: 10px;
   font-size: 1rem;
-  background: white;
-  color: #1e293b;
-  cursor: pointer;
+  background: #872faa;
+  color: white;
+  cursor: pointer #872faa;
   transition: all 0.3s ease;
   min-width: 120px;
 }
@@ -290,6 +336,23 @@
   .contactSection {
     padding: 3rem 1rem;
   }
+  .contentRow {
+    flex-direction: column;
+        text-align: center;
+  }
+
+  .header,
+  .form {
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .waveSection {
+  position: relative;
+  bottom: 6rem;
+}
 
   .container {
     display: block;
@@ -299,7 +362,7 @@
   }
 
   .heading {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .subheading {
@@ -331,7 +394,7 @@
   }
 
   .heading {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 
   .header {
