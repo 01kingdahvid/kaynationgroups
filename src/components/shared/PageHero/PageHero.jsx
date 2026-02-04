@@ -16,65 +16,76 @@ export default function PageHero({
     showShareIcons = true
 }) {
     return (
-        <section className={styles.hero}>
-            {/* Background Image */}
-            <div className={styles.imageWrap}>
-                <Image
-                    src={backgroundImage}
-                    alt={title}
-                    fill
-                    priority
-                    className={styles.bgImage}
-                />
-                <div className={styles.imageOverlay} />
-            </div>
-
-            {/* Content */}
-            <div className={styles.contentContainer}>
-                <div className={styles.contentInner}>
-
-                    {/* Vertical Accent */}
-                    <div className={styles.accentLine} />
-
-                    <div className={styles.textWrap}>
-                        <h1 className={styles.title}>{title}</h1>
-
-                        {subtitle && (
-                            <>
-                                <p className={styles.subtitle}>{subtitle}</p>
-                                <div className={styles.divider} />
-                            </>
-                        )}
-
-                        {showShareIcons && (
-                            <div className={styles.shareRow}>
-                                <span className={styles.shareText}>
-                                    Share this page:
-                                </span>
-
-                                <div className={styles.icons}>
-                                    <a href="#" aria-label="Share on Facebook">
-                                        <FaFacebookF />
-                                    </a>
-
-                                    <a href="#" aria-label="Share on X">
-                                        <FaXTwitter />
-                                    </a>
-
-                                    <a href="#" aria-label="Share on LinkedIn">
-                                        <FaLinkedinIn />
-                                    </a>
-
-                                    <a href="#" aria-label="Share via Email">
-                                        <MdOutlineEmail />
-                                    </a>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-
+        <>
+            <section className={styles.hero}>
+                {/* Background Image */}
+                <div className={styles.imageWrap}>
+                    <Image
+                        src={backgroundImage}
+                        alt={title}
+                        fill
+                        priority
+                        className={styles.bgImage}
+                    />
+                    <div className={styles.imageOverlay} />
                 </div>
+
+                {/* Content */}
+                <div className={styles.contentContainer}>
+                    <div className={styles.contentInner}>
+
+                        {/* Vertical Accent */}
+                        <div className={styles.accentLine} />
+
+                        <div className={styles.textWrap}>
+                            <h1 className={styles.title}>{title}</h1>
+
+                            {subtitle && (
+                                <>
+                                    <p className={styles.subtitle}>{subtitle}</p>
+                                    <div className={styles.divider} />
+                                </>
+                            )}
+
+                            {showShareIcons && (
+                                <div className={styles.shareRow}>
+                                    <span className={styles.shareText}>
+                                        Share this page:
+                                    </span>
+
+                                    <div className={styles.icons}>
+                                        <a href="#" aria-label="Share on Facebook">
+                                            <FaFacebookF />
+                                        </a>
+
+                                        <a href="#" aria-label="Share on X">
+                                            <FaXTwitter />
+                                        </a>
+
+                                        <a href="#" aria-label="Share on LinkedIn">
+                                            <FaLinkedinIn />
+                                        </a>
+
+                                        <a href="#" aria-label="Share via Email">
+                                            <MdOutlineEmail />
+                                        </a>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            {/* REAL SVG WAVEFORM */}
+            <div className={styles.waveSection}>
+                <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+                    <path className={styles.wave3}
+                        d="M0,140 C180,60 380,220 680,140 C980,60 1200,220 1440,140 L1440,200 L0,200 Z" />
+                </svg>
             </div>
-        </section>
+        </>
     );
 }

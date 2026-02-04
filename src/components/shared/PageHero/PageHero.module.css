@@ -9,7 +9,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: #f7f7f9;
+  /* background: #f7f7f9; */
 }
 
 /* =============================
@@ -34,12 +34,12 @@
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(255,255,255,0.96) 0%,
-    rgba(255,255,255,0.85) 25%,
-    rgba(255,255,255,0.55) 45%,
-    rgba(255,255,255,0.15) 65%,
-    rgba(255,255,255,0) 85%
-  );
+    white 0%,
+    rgba(255, 255, 255, 0.895) 25%,
+  rgba(255, 255, 255, 0.897) 45%,
+    rgba(255, 255, 255, 0.416) 65%,
+    rgba(255, 255, 255, 0.244) 85%
+  ) !important;
 }
 
 /* =============================
@@ -133,6 +133,52 @@
   color: #000;
   transform: translateY(-2px);
 }
+
+
+/* =============================
+   WAVE FREQUENCY ANIMATION
+============================= */
+.waveSection {
+  height: auto;
+  max-height: auto;
+  overflow: hidden;
+  position: relative;
+  top: -6.1rem;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
+.waveSection svg {
+  width: 200%;
+  height: 100px;
+  animation: waveMove 14s linear infinite;
+}
+
+.wave3 {
+  fill: white;
+  animation: waveFloat 12s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
 
 /* =============================
    BREAKPOINTS
