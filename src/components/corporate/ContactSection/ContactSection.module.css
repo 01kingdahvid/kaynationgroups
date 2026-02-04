@@ -403,6 +403,6 @@
 
   .submitButton {
     width: 100%;
-    max-width: none;
+    /* max-width: none; */
   }
 }

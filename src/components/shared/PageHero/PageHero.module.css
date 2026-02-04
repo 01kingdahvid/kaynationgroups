@@ -1,0 +1,224 @@
+/* =============================
+   HERO ROOT
+============================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #f7f7f9;
+}
+
+/* =============================
+   BACKGROUND IMAGE
+============================= */
+
+.imageWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.bgImage {
+  object-fit: cover;
+  object-position: right center;
+  filter: brightness(0.9);
+}
+
+/* White fade overlay LEFT → RIGHT */
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.96) 0%,
+    rgba(255, 255, 255, 0.961) 25%,
+    rgba(255,255,255,0.55) 45%,
+    rgba(255,255,255,0.15) 65%,
+    rgba(255,255,255,0) 85%
+  );
+}
+
+/* =============================
+   CONTENT
+============================= */
+
+.contentContainer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+.contentInner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 620px;
+   inset: 0;
+  background: linear-gradient(
+    90deg,
+    
+    rgba(255,255,255,0.55) 45%,
+    rgba(255,255,255,0.15) 65%,
+    rgba(255,255,255,0) 85%
+    rgba(255,255,255,0.55) 45%,
+    rgba(255,255,255,0.15) 65%,
+    rgba(255,255,255,0) 85%
+  );
+}
+
+/* =============================
+   ACCENT LINE
+============================= */
+
+.accentLine {
+  width: 6px;
+  height: 140px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #8b2bd3, #ff4fd8);
+}
+
+/* =============================
+   TEXT
+============================= */
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.divider {
+  width: 220px;
+  height: 1px;
+  background: rgba(0,0,0,0.15);
+  margin-bottom: 18px;
+}
+
+/* =============================
+   SHARE
+============================= */
+
+.shareRow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.shareText {
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 1px 2px #eee;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+}
+
+.icons a {
+  color: white;
+  text-shadow: 0 1px 2px black;
+  font-size: 18px;
+  transition: all 0.25s ease;
+}
+
+.icons a:hover {
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* =============================
+   BREAKPOINTS
+============================= */
+
+/* Desktop Large */
+@media (min-width: 1200px) {
+  .hero {
+    height: 520px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .hero {
+    height: 440px;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .imageOverlay {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.7) 40%,
+      rgba(255,255,255,0.2) 70%,
+      rgba(255,255,255,0) 100%
+    );
+  }
+
+  .accentLine {
+    height: 110px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .contentContainer {
+    padding: 0 20px;
+  }
+
+  .contentInner {
+    gap: 16px;
+  }
+
+  .accentLine {
+    height: 90px;
+    width: 5px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .icons a {
+    font-size: 16px;
+  }
+}

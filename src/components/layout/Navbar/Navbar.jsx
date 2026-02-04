@@ -111,7 +111,7 @@ export default function Navbar() {
 
           <nav className={styles.navLinks}>
             <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
+            <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
             <Link href="/services">Our Services</Link>
             <Link href="/contact">Contact</Link>
