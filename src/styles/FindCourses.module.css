@@ -61,15 +61,25 @@
   border: none;
   padding: 16px;
   font-size: 15px;
-  /* padding: 0.875rem 1rem; */
-  /* border: 2px solid #e2e8f0; */
-  /* border-radius: 10px; */
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
   background: #eeeeee;
-  color: white;
+  color: black;
 }
+
+.searchWrap .input::placeholder,
+.textarea::placeholder {
+  color: white;
+  border: none !important;
+}
+
+.searchWrap input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 
 .searchWrap button {
   width: 60px;

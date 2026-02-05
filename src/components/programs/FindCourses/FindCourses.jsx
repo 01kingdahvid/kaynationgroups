@@ -71,13 +71,20 @@ export default function FindCoursesPage() {
 
                     <div className={styles.grid}>
                         {paginated.map(course => (
-                            <>
-                                <div className="" style={{padding: "0.3rem", background: "#eeeeee", borderRadius: "8px", height: "auto"}}>
-                                    <CourseCard key={course.id} course={course} />
-                                </div>
-                            </>
+                            <div
+                                key={course.id}
+                                style={{
+                                    padding: "0.3rem",
+                                    background: "#eeeeee",
+                                    borderRadius: "8px",
+                                    height: "auto"
+                                }}
+                            >
+                                <CourseCard course={course} />
+                            </div>
                         ))}
                     </div>
+
 
                     <Pagination
                         page={page}

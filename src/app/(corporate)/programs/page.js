@@ -2,7 +2,7 @@ import Navbar from '@/components/layout/Navbar/Navbar'
 import FindCoursesPage from '@/components/programs/FindCourses/FindCourses'
 import PageHero from '@/components/shared/PageHero/PageHero'
 
-export default function AboutUsPage () {
+export default function ProgramsPage () {
   return (
     <>
       <Navbar />
