@@ -139,7 +139,8 @@ export default function TestimonialSection() {
                     <path className={styles.wave3}
                         d="M0,140 C180,60 380,220 680,140 C980,60 1200,220 1440,140 L1440,200 L0,200 Z" />
                 </svg>
-            </div></>
+            </div>
+        </>
 
     );
 }

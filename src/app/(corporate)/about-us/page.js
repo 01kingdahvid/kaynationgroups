@@ -1,3 +1,4 @@
+import AboutUsPageSection from '@/components/about-us/AboutUsPageSection'
 import Navbar from '@/components/layout/Navbar/Navbar'
 import PageHero from '@/components/shared/PageHero/PageHero'
 
@@ -11,6 +12,7 @@ export default function AboutUsPage () {
         backgroundImage='/images/shared/services1.avif'
         showShareIcons={true}
       />
+      <AboutUsPageSection/>
     </>
   )
 }

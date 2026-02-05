@@ -1,0 +1,229 @@
+.aboutSection {
+  padding: 80px 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ===== TOP CARD ===== */
+
+.topCard {
+  border-radius: 24px;
+  padding: 50px 40px;
+  color: white;
+  background: linear-gradient(90deg, #361860, #7a30df, #7a30df);
+}
+
+.tabRow {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tabPrimary {
+  background: #624191;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.tabHighlight {
+  background: #eccd4f;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #222;
+}
+
+.topContent h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.topContent p {
+  max-width: 800px;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.badgeRow {
+  margin-top: 22px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.badgeRow span {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* ===== INTRO GRID ===== */
+
+.introGrid {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 24px;
+}
+
+.whoCard,
+.diffCard {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.whoCard h1 {
+  margin-bottom: 14px;
+}
+
+.diffCard ul {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+/* ===== VISION MISSION ===== */
+
+.vmGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.vmCard {
+  background: white;
+  border: 1px solid #e4e1ea;
+  box-shadow: 0 0 25px rgb(228, 225, 234);
+  padding: 40px;
+  border-radius: 18px;
+}
+
+/* ===== CORE VALUES ===== */
+
+.coreValuesSection {
+  background: #f9fafc;
+  padding: 60px 40px;
+}
+
+.coreHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.coreGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.coreCard {
+  background: white;
+  padding: 26px;
+  border-radius: 16px;
+}
+
+/* ===== BOTTOM CARD ===== */
+
+.bottomCard {
+  border-radius: 24px;
+  padding: 50px 40px;
+  color: white;
+  background: linear-gradient(90deg, #493939, #302543, #492b75, #6f37bf);
+}
+
+.bottomTabs {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* =============================
+   WAVE FREQUENCY ANIMATION
+============================= */
+.waveSection {
+  /* height: 160px; */
+  padding: 0;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
+  position: relative;
+  /* top: -4.8rem; */
+  z-index: 1;
+}
+
+.waveSection svg {
+  width: 200%;
+  height: 100px;
+  animation: waveMove 14s linear infinite;
+}
+
+.wave3 {
+  fill: #f1f1f1;
+  animation: waveFloat 12s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1200px) {
+  .introGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .coreGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .vmGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .coreGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .topContent h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 60px 6%;
+  }
+
+  .topCard,
+  .bottomCard {
+    padding: 30px 22px;
+  }
+}
