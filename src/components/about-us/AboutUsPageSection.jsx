@@ -24,7 +24,7 @@ export default function AboutUsPageSection() {
                         </p>
 
                         <div className={styles.badgeRow}>
-                            <span>Offices: London, Lagos, Abuja, Port Harcourt, Accra, Istanbul, Nairobi</span>
+                            <span>Offices: Lagos, Abuja, Port Harcourt.</span>
                             <span>Tech-enabled and student-first</span>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ export default function AboutUsPageSection() {
                 {/* ===== VISION MISSION ===== */}
                 <div className={styles.vmGrid}>
                     <div className={styles.vmCard}>
-                        <h4>Vision</h4>
+                        <h4>VISION</h4>
                         <h2>Expand the reach of international education</h2>
                         <p>
                             To expand the reach of international education by making it more
@@ -65,7 +65,7 @@ export default function AboutUsPageSection() {
                     </div>
 
                     <div className={styles.vmCard}>
-                        <h4>Mission</h4>
+                        <h4>MISSION</h4>
                         <h2>Transparent, tech-enabled, holistic support</h2>
                         <p>
                             We provide transparent, tech-enabled, and holistic support to students
@@ -79,7 +79,7 @@ export default function AboutUsPageSection() {
                 <div className={styles.coreValuesSection}>
                     <div className={styles.coreHeader}>
                         <div>
-                            <h4>Core Values</h4>
+                            <h4>CORE VALUES</h4>
                             <h2>How we show up, every day</h2>
                         </div>
                         <h5>Students-first. Outcomes-focused.</h5>

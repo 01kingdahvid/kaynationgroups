@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Accounting and Finance (With Professional Exemptions) BA (Hons)",
+    "university": "University of Sunderland",
+    "studyLevel": "Undergraduate Programmes",
+    "location": "Sunderland, United Kingdom",
+    "city": "Sunderland",
+    "intake": "January, September",
+    "entryRequirement": "A level certificate with minimum C or equivalent",
+    "tuition": 16000
+  },
+  {
+    "id": 2,
+    "title": "Accounting and Finance BA (Hons)",
+    "university": "York St John University",
+    "studyLevel": "Undergraduate Programmes",
+    "location": "York, United Kingdom",
+    "city": "York",
+    "intake": "September",
+    "entryRequirement": "A level certificate with minimum C or equivalent",
+    "tuition": 11500
+  },
+  {
+    "id": 3,
+    "title": "Accounting and Finance BSc (Hons)",
+    "university": "Leeds Trinity University",
+    "studyLevel": "Undergraduate Programmes",
+    "location": "Leeds, United Kingdom",
+    "city": "Leeds",
+    "intake": "September",
+    "entryRequirement": "A level certificate with minimum C or equivalent",
+    "tuition": 12000
+  },
+  {
+    "id": 4,
+    "title": "Accounting and Finance BSc (Hons)",
+    "university": "Solent University",
+    "studyLevel": "Undergraduate Programmes",
+    "location": "Southampton, United Kingdom",
+    "city": "Southampton",
+    "intake": "September",
+    "entryRequirement": "A level certificate with minimum C or equivalent",
+    "tuition": 17750
+  },
+  {
+    "id": 5,
+    "title": "Accounting and Financial Management (Top Up) BA (Hons)",
+    "university": "University of Sunderland",
+    "studyLevel": "Top Up Programmes",
+    "location": "Sunderland, United Kingdom",
+    "city": "Sunderland",
+    "intake": "January, October",
+    "entryRequirement": "HND or equivalent",
+    "tuition": 16000
+  },
+  {
+    "id": 6,
+    "title": "Adult Nursing BNurs (Hons)",
+    "university": "University of Wolverhampton",
+    "studyLevel": "Undergraduate Programmes",
+    "location": "Wolverhampton, United Kingdom",
+    "city": "Wolverhampton",
+    "intake": "April, September",
+    "entryRequirement": "A level certificate with minimum C or equivalent",
+    "tuition": 14950
+  },
+  {
+    "id": 7,
+    "title": "Adult Nursing MSc",
+    "university": "Buckinghamshire New University",
+    "studyLevel": "Postgraduate Programmes",
+    "location": "High Wycombe, United Kingdom",
+    "city": "High Wycombe",
+    "intake": "September",
+    "entryRequirement": "2:1 degree or 2:2 related",
+    "tuition": 15150
+  },
+  {
+    "id": 8,
+    "title": "International Business MSc",
+    "university": "University of East London",
+    "studyLevel": "Postgraduate Programmes",
+    "location": "London, United Kingdom",
+    "city": "London",
+    "intake": "September",
+    "entryRequirement": "2:2 degree minimum",
+    "tuition": 17000
+  },
+  {
+    "id": 9,
+    "title": "Cyber Security BSc (Hons)",
+    "university": "Edge Hill University",
+    "studyLevel": "Undergraduate Programmes",
+    "location": "Ormskirk, United Kingdom",
+    "city": "Ormskirk",
+    "intake": "September",
+    "entryRequirement": "A level or equivalent",
+    "tuition": 15500
+  },
+  {
+    "id": 10,
+    "title": "Business Management Foundation",
+    "university": "University of Law",
+    "studyLevel": "Foundation Programmes",
+    "location": "London, United Kingdom",
+    "city": "London",
+    "intake": "January, September",
+    "entryRequirement": "WAEC / A Level",
+    "tuition": 13000
+  },
+  {
+    "id": 11,
+    "title": "Mechanical Engineering BEng",
+    "university": "University of Wolverhampton",
+    "studyLevel": "Undergraduate Programmes",
+    "location": "Wolverhampton, United Kingdom",
+    "city": "Wolverhampton",
+    "intake": "September",
+    "entryRequirement": "A level Maths + Physics",
+    "tuition": 16500
+  },
+  {
+    "id": 12,
+    "title": "Banking and Finance (Top Up) BA (Hons)",
+    "university": "University of Sunderland",
+    "studyLevel": "Top Up Programmes",
+    "location": "Sunderland, United Kingdom",
+    "city": "Sunderland",
+    "intake": "October",
+    "entryRequirement": "HND Finance or Business",
+    "tuition": 16500
+  }
+]

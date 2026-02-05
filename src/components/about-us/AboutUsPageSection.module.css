@@ -1,15 +1,16 @@
 .aboutSection {
-  padding: 80px 5%;
+  padding: 80px 7.5%;
   display: flex;
   flex-direction: column;
   gap: 60px;
+  margin-top: -6rem;
 }
 
 /* ===== TOP CARD ===== */
 
 .topCard {
   border-radius: 24px;
-  padding: 50px 40px;
+  padding: 40px 30px;
   color: white;
   background: linear-gradient(90deg, #361860, #7a30df, #7a30df);
 }
@@ -23,29 +24,71 @@
 
 .tabPrimary {
   background: #624191;
-  color: white;
   padding: 8px 18px;
   border-radius: 999px;
-  font-size: 14px;
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 34px;
+  color: rgb(255, 255, 255);
 }
 
 .tabHighlight {
   background: #eccd4f;
   padding: 8px 18px;
   border-radius: 999px;
-  font-size: 14px;
-  color: #222;
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 34px;
+  color: rgb(17, 24, 39);
 }
 
 .topContent h1 {
-  font-size: 42px;
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 38px;
+  font-weight: 950;
+  line-height: 43.7px;
+  color: rgb(255, 255, 255);
   margin-bottom: 16px;
 }
 
 .topContent p {
-  max-width: 800px;
+  max-width: 650px;
   opacity: 0.95;
-  line-height: 1.6;
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .badgeRow {
@@ -56,10 +99,21 @@
 }
 
 .badgeRow span {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   padding: 8px 16px;
   border-radius: 999px;
-  font-size: 14px;
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 34px;
+  color: rgb(255, 255, 255);
 }
 
 /* ===== INTRO GRID ===== */
@@ -75,16 +129,75 @@
   background: white;
   padding: 40px;
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid #e4e1ea;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .whoCard h1 {
   margin-bottom: 14px;
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 950;
+  line-height: 34px;
+  color: rgb(31, 18, 51);
+}
+.whoCard p {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.5px;
+  color: rgb(15, 23, 42);
+  text-align: left;
+}
+
+.diffCard h4 {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 950;
+  line-height: 34px;
+  color: rgb(31, 18, 51);
 }
 
 .diffCard ul {
   margin-top: 12px;
   padding-left: 18px;
+}
+
+.diffCard li {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(15, 23, 42);
+  margin-bottom: 1rem;
 }
 
 /* ===== VISION MISSION ===== */
@@ -103,11 +216,59 @@
   border-radius: 18px;
 }
 
+.vmCard h4 {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 34px;
+  color: rgb(100, 116, 139);
+}
+
+.vmCard h2 {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 22px;
+  font-weight: 950;
+  line-height: 34px;
+  color: rgb(31, 18, 51);
+  margin-bottom: 1rem;
+}
+
+.vmCard p {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.5px;
+  color: rgb(15, 23, 42);
+}
+
 /* ===== CORE VALUES ===== */
 
 .coreValuesSection {
   background: #f9fafc;
-  padding: 60px 40px;
+  padding: 30px 25px;
+  border: 1px solid #e4e1ea;
+  border-radius: 1rem;
 }
 
 .coreHeader {
@@ -117,6 +278,51 @@
   margin-bottom: 30px;
   flex-wrap: wrap;
   gap: 16px;
+}
+
+.coreHeader h4 {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 34px;
+  color: rgb(100, 116, 139);
+}
+
+.coreHeader h2 {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 950;
+  line-height: 34px;
+  color: rgb(31, 18, 51);
+}
+
+.coreHeader h5 {
+  font-family:
+    Lato,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 34px;
+  color: rgb(100, 116, 139);
 }
 
 .coreGrid {
@@ -129,6 +335,23 @@
   background: white;
   padding: 26px;
   border-radius: 16px;
+  border: 1px solid #e4e1ea;
+}
+
+.coreCard h3{
+    font-family: Lato, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+font-size: 16px;
+font-weight: 950;
+line-height: 34px;
+color: rgb(31, 18, 51);
+}
+
+.coreCard p{
+    font-family: Lato, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 30.6px;
+color: rgb(15, 23, 42);
 }
 
 /* ===== BOTTOM CARD ===== */
