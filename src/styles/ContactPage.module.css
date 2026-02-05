@@ -41,6 +41,22 @@
   color: rgb(34, 34, 34);
 }
 
+.locationContent p {
+  font-family: Catamaran, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(34, 34, 34);
+}
+
+.locationContent li {
+  font-family: Catamaran, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(181, 55, 197);
+}
+
 /* IMAGE */
 .imageWrap {
   position: relative;
