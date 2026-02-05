@@ -1,7 +1,9 @@
+import ContactPage from '@/components/contact-us/ContactUsPage/ContactUsPage'
+import TestimonialSection from '@/components/corporate/TestimonialSection/TestimonialSection'
 import Navbar from '@/components/layout/Navbar/Navbar'
 import PageHero from '@/components/shared/PageHero/PageHero'
 
-export default function ContactUsPage () {
+export default function ContactUs () {
   return (
     <>
       <Navbar />
@@ -11,6 +13,9 @@ export default function ContactUsPage () {
         backgroundImage='/images/shared/services1.avif'
         showShareIcons={true}
       />
+
+      <ContactPage/>
+      <TestimonialSection/>
     </>
   )
 }
