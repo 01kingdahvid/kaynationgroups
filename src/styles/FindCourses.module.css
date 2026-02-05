@@ -198,6 +198,7 @@
   border: 1px solid #c758a6;
   background: white;
   cursor: pointer;
+  color: black;
 }
 
 .activePage {
