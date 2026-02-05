@@ -1,4 +1,5 @@
 import ContactSection from '@/components/corporate/ContactSection/ContactSection'
+import ServiceCards from '@/components/corporate/ServiceCard/ServiceCard'
 import Navbar from '@/components/layout/Navbar/Navbar'
 import ServicesMainSection from '@/components/our-services/ServicesMainSection/ServicesMainSection'
 import PageHero from '@/components/shared/PageHero/PageHero'
@@ -14,9 +15,11 @@ export default function ServicesPage () {
         showShareIcons={true}
       />
 
-      <ServicesMainSection/>
-
-      <ContactSection/>
+      <ServicesMainSection />
+      <div style={{ marginTop: '7rem' }}>
+        <ServiceCards />
+      </div>
+      <ContactSection />
     </>
   )
 }
