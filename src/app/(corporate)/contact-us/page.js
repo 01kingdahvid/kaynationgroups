@@ -14,8 +14,10 @@ export default function ContactUs () {
         showShareIcons={true}
       />
 
-      <ContactPage/>
-      <TestimonialSection/>
+      <ContactPage />
+      <div style={{ marginTop: '-4rem' }}>
+        <TestimonialSection />
+      </div>
     </>
   )
 }
