@@ -15,7 +15,7 @@ export default function Home() {
       <ServiceCards/>
       <AboutUs/>
       <TestimonialSection/>
-      <ContactSection/>
+      {/* <ContactSection/> */}
       {/* <EduHero /> */}
       {/* <FarmHero /> */}
     </>
