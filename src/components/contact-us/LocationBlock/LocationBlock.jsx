@@ -1,4 +1,4 @@
-import styles from "@/styles/ContactPage.module.css";
+import styles from "@/styles/pages/ContactPage.module.css";
 import { FaPhoneAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
 export default function LocationBlock() {

@@ -1,9 +1,10 @@
 // app/programs/[slug]/page.js
 import Navbar from '@/components/layout/Navbar/Navbar'
+import ProgramHero from '@/components/shared/ProgramHero/ProgramHero'
 import programs from '@/data/programs.json'
-import styles from "@/styles/pages/CourseDetail.module.css";
+import styles from '@/styles/pages/CourseDetail.module.css'
 import Script from 'next/script'
-import PageHero from '@/components/shared/PageHero/PageHero'
+// import PageHero from '@/components/shared/PageHero/PageHero'
 
 // Generate static params for SSG
 export async function generateStaticParams () {
@@ -72,12 +73,13 @@ export default async function CourseDetailPage ({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <PageHero
-        title='Our Programs'
-        subtitle='Learn more about our programs'
-        backgroundImage='/images/shared/services1.avif'
-        showShareIcons={true}
+      <ProgramHero
+        title={program.title}
+        university={program.university}
+        heroImage={program.heroImage || '/images/shared/services1.avif'}
+        logoImage={program.logoImage || '/images/shared/services1.avif'}
       />
+
       <main className={styles.programDetail_container}>
         <section className={styles.programDetail_header}>
           <h1>{program.title}</h1>

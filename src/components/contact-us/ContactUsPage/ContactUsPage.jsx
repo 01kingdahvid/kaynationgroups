@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "@/styles/ContactPage.module.css";
+import styles from "@/styles/pages/ContactPage.module.css";
 import LocationBlock from "../LocationBlock/LocationBlock";
 import ContactForm from "../ContactForm/ContactForm";
 
