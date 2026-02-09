@@ -1,134 +1,373 @@
 [
   {
     "id": 1,
+    "slug": "accounting-and-finance-with-professional-exemptions-ba-hons-sunderland",
     "title": "Accounting and Finance (With Professional Exemptions) BA (Hons)",
     "university": "University of Sunderland",
     "studyLevel": "Undergraduate Programmes",
+    "qualification": "BA (Hons)",
     "location": "Sunderland, United Kingdom",
     "city": "Sunderland",
     "intake": "January, September",
+    "nextIntake": "January, September",
     "entryRequirement": "A level certificate with minimum C or equivalent",
-    "tuition": 16000
+    "entryScore": "A level certificate with minimum C or equivalent",
+    "tuition": 16000,
+    "fees": "£16,000",
+    "duration": "3 years",
+    "ranking": {
+      "ukRanking": 90,
+      "subjectRanking": 55,
+      "tefRating": "Silver"
+    },
+    "seo": {
+      "metaTitle": "Accounting and Finance BA (Hons) with Professional Exemptions | University of Sunderland",
+      "metaDescription": "Study Accounting and Finance BA (Hons) with professional exemptions at the University of Sunderland. Gain ACCA/CIMA-aligned knowledge with strong career prospects.",
+      "keywords": ["Accounting BA UK", "Finance degree Sunderland", "ACCA exemptions UK"]
+    },
+    "courseModules": {
+      "year1": [
+        "Introduction to Financial Accounting",
+        "Business Economics",
+        "Academic and Professional Skills",
+        "Management Accounting Fundamentals"
+      ],
+      "year2": [
+        "Financial Reporting",
+        "Corporate Finance",
+        "Taxation Principles",
+        "Business Law"
+      ],
+      "year3": [
+        "Advanced Financial Management",
+        "Auditing and Assurance",
+        "Strategic Management",
+        "Research Project"
+      ]
+    }
   },
+
   {
     "id": 2,
+    "slug": "accounting-and-finance-ba-hons-york-st-john",
     "title": "Accounting and Finance BA (Hons)",
     "university": "York St John University",
     "studyLevel": "Undergraduate Programmes",
+    "qualification": "BA (Hons)",
     "location": "York, United Kingdom",
     "city": "York",
     "intake": "September",
+    "nextIntake": "September",
     "entryRequirement": "A level certificate with minimum C or equivalent",
-    "tuition": 11500
+    "entryScore": "A level certificate with minimum C or equivalent",
+    "tuition": 11500,
+    "fees": "£11,500",
+    "duration": "3 years",
+    "ranking": {
+      "ukRanking": 100,
+      "subjectRanking": 70,
+      "tefRating": "Silver"
+    },
+    "seo": {
+      "metaTitle": "Accounting and Finance BA (Hons) | York St John University",
+      "metaDescription": "Accounting and Finance BA (Hons) at York St John University. Develop strong analytical and financial skills for global careers.",
+      "keywords": ["Accounting degree York", "Finance BA UK", "York St John accounting"]
+    },
+    "courseModules": {
+      "year1": [
+        "Financial Accounting",
+        "Business Environment",
+        "Quantitative Methods",
+        "Introduction to Economics"
+      ],
+      "year2": [
+        "Management Accounting",
+        "Corporate Finance",
+        "Financial Markets",
+        "Professional Development"
+      ],
+      "year3": [
+        "Advanced Accounting",
+        "Strategic Finance",
+        "Ethics and Governance",
+        "Dissertation"
+      ]
+    }
   },
+
   {
     "id": 3,
+    "slug": "accounting-and-finance-bsc-hons-leeds-trinity",
     "title": "Accounting and Finance BSc (Hons)",
     "university": "Leeds Trinity University",
     "studyLevel": "Undergraduate Programmes",
+    "qualification": "BSc (Hons)",
     "location": "Leeds, United Kingdom",
     "city": "Leeds",
     "intake": "September",
+    "nextIntake": "September",
     "entryRequirement": "A level certificate with minimum C or equivalent",
-    "tuition": 12000
+    "entryScore": "A level certificate with minimum C or equivalent",
+    "tuition": 12000,
+    "fees": "£12,000",
+    "duration": "3 years",
+    "ranking": {
+      "ukRanking": 110,
+      "subjectRanking": 75,
+      "tefRating": "Silver"
+    },
+    "seo": {
+      "metaTitle": "Accounting and Finance BSc (Hons) | Leeds Trinity University",
+      "metaDescription": "Study Accounting and Finance BSc (Hons) at Leeds Trinity University with strong employability focus.",
+      "keywords": ["Accounting Leeds", "Finance BSc UK", "Leeds Trinity accounting"]
+    },
+    "courseModules": {
+      "year1": [
+        "Accounting Principles",
+        "Business Maths",
+        "Digital Business",
+        "Economic Environment"
+      ],
+      "year2": [
+        "Financial Reporting",
+        "Management Accounting",
+        "Business Analytics",
+        "Professional Placement Prep"
+      ],
+      "year3": [
+        "Advanced Accounting",
+        "Financial Strategy",
+        "Corporate Governance",
+        "Applied Research Project"
+      ]
+    }
   },
+
   {
     "id": 4,
+    "slug": "accounting-and-finance-bsc-hons-solent-university",
     "title": "Accounting and Finance BSc (Hons)",
     "university": "Solent University",
     "studyLevel": "Undergraduate Programmes",
+    "qualification": "BSc (Hons)",
     "location": "Southampton, United Kingdom",
     "city": "Southampton",
     "intake": "September",
-    "entryRequirement": "A level certificate with minimum C or equivalent",
-    "tuition": 17750
+    "nextIntake": "September",
+    "entryRequirement": "A level certificate with a minimum of C",
+    "entryScore": "A level certificate with a minimum of C",
+    "tuition": 17750,
+    "fees": "£17,750",
+    "duration": "3 years",
+    "ranking": {
+      "ukRanking": 95,
+      "subjectRanking": 60,
+      "tefRating": "Gold"
+    },
+    "seo": {
+      "metaTitle": "Accounting and Finance BSc (Hons) | Solent University",
+      "metaDescription": "Accounting and Finance BSc (Hons) at Solent University with practical, career-focused learning.",
+      "keywords": ["Accounting Solent", "Finance Southampton", "BSc Accounting UK"]
+    },
+    "courseModules": {
+      "year1": [
+        "Positive Psychology for Success",
+        "Data Analysis, Tools and Application",
+        "Marketing, Sales and Negotiation Skills",
+        "Accounting Skills",
+        "Introduction to Financial Reporting",
+        "Introduction to Management Accounting"
+      ],
+      "year2": [
+        "Financial Reporting",
+        "Financial Management",
+        "Taxation Principles",
+        "Management Accounting",
+        "The UK Financial System"
+      ],
+      "year3": [
+        "The International Financial System",
+        "Advanced Management Accounting",
+        "Corporate Financial Management",
+        "Advanced Financial Reporting"
+      ]
+    }
   },
-  {
+   {
     "id": 5,
-    "title": "Accounting and Financial Management (Top Up) BA (Hons)",
-    "university": "University of Sunderland",
-    "studyLevel": "Top Up Programmes",
-    "location": "Sunderland, United Kingdom",
-    "city": "Sunderland",
-    "intake": "January, October",
-    "entryRequirement": "HND or equivalent",
-    "tuition": 16000
-  },
-  {
-    "id": 6,
+    "slug": "adult-nursing-bnurs-hons-university-of-wolverhampton",
     "title": "Adult Nursing BNurs (Hons)",
     "university": "University of Wolverhampton",
     "studyLevel": "Undergraduate Programmes",
+    "qualification": "BNurs (Hons)",
     "location": "Wolverhampton, United Kingdom",
     "city": "Wolverhampton",
     "intake": "April, September",
+    "nextIntake": "April, September",
     "entryRequirement": "A level certificate with minimum C or equivalent",
-    "tuition": 14950
+    "entryScore": "A level certificate with minimum C or equivalent",
+    "tuition": 14950,
+    "fees": "£14,950",
+    "duration": "3 years",
+    "ranking": {
+      "ukRanking": 85,
+      "subjectRanking": 35,
+      "tefRating": "Silver"
+    },
+    "seo": {
+      "metaTitle": "Adult Nursing BNurs (Hons) | University of Wolverhampton",
+      "metaDescription": "Study Adult Nursing BNurs (Hons) at the University of Wolverhampton. NMC-approved nursing degree with strong clinical placements.",
+      "keywords": ["Adult Nursing UK", "BNurs Wolverhampton", "Nursing degree UK"]
+    },
+    "courseModules": {
+      "year1": [
+        "Foundations of Nursing Practice",
+        "Anatomy and Physiology",
+        "Professional Values in Healthcare",
+        "Evidence-Based Practice"
+      ],
+      "year2": [
+        "Adult Nursing Practice",
+        "Pharmacology for Nurses",
+        "Health Assessment",
+        "Clinical Decision Making"
+      ],
+      "year3": [
+        "Leadership in Healthcare",
+        "Complex Care Management",
+        "Research in Nursing",
+        "Professional Practice Placement"
+      ]
+    }
   },
+
   {
-    "id": 7,
+    "id": 6,
+    "slug": "adult-nursing-msc-buckinghamshire-new-university",
     "title": "Adult Nursing MSc",
     "university": "Buckinghamshire New University",
     "studyLevel": "Postgraduate Programmes",
+    "qualification": "MSc",
     "location": "High Wycombe, United Kingdom",
     "city": "High Wycombe",
     "intake": "September",
-    "entryRequirement": "2:1 degree or 2:2 related",
-    "tuition": 15150
+    "nextIntake": "September",
+    "entryRequirement": "2:1 degree or 2:2 in a related subject",
+    "entryScore": "2:1 degree or 2:2 in a related subject",
+    "tuition": 15150,
+    "fees": "£15,150",
+    "duration": "2 years",
+    "ranking": {
+      "ukRanking": 110,
+      "subjectRanking": 45,
+      "tefRating": "Silver"
+    },
+    "seo": {
+      "metaTitle": "Adult Nursing MSc | Buckinghamshire New University",
+      "metaDescription": "Adult Nursing MSc at Buckinghamshire New University. Accelerated postgraduate nursing degree with NMC approval.",
+      "keywords": ["Adult Nursing MSc", "Postgraduate Nursing UK", "BNU Nursing"]
+    },
+    "courseModules": {
+      "year1": [
+        "Foundations of Adult Nursing",
+        "Professional Nursing Practice",
+        "Health and Wellbeing",
+        "Clinical Skills Development"
+      ],
+      "year2": [
+        "Advanced Nursing Practice",
+        "Leadership and Management",
+        "Research Methods",
+        "Clinical Practice Placement"
+      ]
+    }
   },
+
   {
-    "id": 8,
+    "id": 7,
+    "slug": "international-business-msc-university-of-east-london",
     "title": "International Business MSc",
     "university": "University of East London",
     "studyLevel": "Postgraduate Programmes",
+    "qualification": "MSc",
     "location": "London, United Kingdom",
     "city": "London",
     "intake": "September",
+    "nextIntake": "September",
     "entryRequirement": "2:2 degree minimum",
-    "tuition": 17000
+    "entryScore": "2:2 degree minimum",
+    "tuition": 17000,
+    "fees": "£17,000",
+    "duration": "1 year",
+    "ranking": {
+      "ukRanking": 95,
+      "subjectRanking": 50,
+      "tefRating": "Silver"
+    },
+    "seo": {
+      "metaTitle": "International Business MSc | University of East London",
+      "metaDescription": "International Business MSc at the University of East London. Develop global leadership and strategic management skills.",
+      "keywords": ["International Business MSc UK", "Business degree London", "UEL MSc Business"]
+    },
+    "courseModules": {
+      "core": [
+        "Global Business Strategy",
+        "International Marketing",
+        "Cross-Cultural Management",
+        "Business Analytics"
+      ],
+      "final": [
+        "Research Methods",
+        "Applied Business Project or Dissertation"
+      ]
+    }
   },
+
   {
-    "id": 9,
+    "id": 8,
+    "slug": "cyber-security-bsc-hons-edge-hill-university",
     "title": "Cyber Security BSc (Hons)",
     "university": "Edge Hill University",
     "studyLevel": "Undergraduate Programmes",
+    "qualification": "BSc (Hons)",
     "location": "Ormskirk, United Kingdom",
     "city": "Ormskirk",
     "intake": "September",
+    "nextIntake": "September",
     "entryRequirement": "A level or equivalent",
-    "tuition": 15500
-  },
-  {
-    "id": 10,
-    "title": "Business Management Foundation",
-    "university": "University of Law",
-    "studyLevel": "Foundation Programmes",
-    "location": "London, United Kingdom",
-    "city": "London",
-    "intake": "January, September",
-    "entryRequirement": "WAEC / A Level",
-    "tuition": 13000
-  },
-  {
-    "id": 11,
-    "title": "Mechanical Engineering BEng",
-    "university": "University of Wolverhampton",
-    "studyLevel": "Undergraduate Programmes",
-    "location": "Wolverhampton, United Kingdom",
-    "city": "Wolverhampton",
-    "intake": "September",
-    "entryRequirement": "A level Maths + Physics",
-    "tuition": 16500
-  },
-  {
-    "id": 12,
-    "title": "Banking and Finance (Top Up) BA (Hons)",
-    "university": "University of Sunderland",
-    "studyLevel": "Top Up Programmes",
-    "location": "Sunderland, United Kingdom",
-    "city": "Sunderland",
-    "intake": "October",
-    "entryRequirement": "HND Finance or Business",
-    "tuition": 16500
+    "entryScore": "A level or equivalent",
+    "tuition": 15500,
+    "fees": "£15,500",
+    "duration": "3 years",
+    "ranking": {
+      "ukRanking": 70,
+      "subjectRanking": 25,
+      "tefRating": "Gold"
+    },
+    "seo": {
+      "metaTitle": "Cyber Security BSc (Hons) | Edge Hill University",
+      "metaDescription": "Study Cyber Security BSc (Hons) at Edge Hill University. Learn ethical hacking, network security, and digital forensics.",
+      "keywords": ["Cyber Security degree UK", "Edge Hill Cyber Security", "BSc Cyber Security"]
+    },
+    "courseModules": {
+      "year1": [
+        "Programming Fundamentals",
+        "Computer Systems",
+        "Introduction to Cyber Security",
+        "Networking Essentials"
+      ],
+      "year2": [
+        "Ethical Hacking",
+        "Digital Forensics",
+        "Secure Systems Design",
+        "Data Protection and Law"
+      ],
+      "year3": [
+        "Advanced Cyber Defence",
+        "Penetration Testing",
+        "Cyber Security Management",
+        "Final Year Project"
+      ]
+    }
   }
 ]

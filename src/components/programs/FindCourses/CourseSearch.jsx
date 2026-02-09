@@ -1,4 +1,4 @@
-import styles from "@/styles/FindCourses.module.css";
+import styles from "@/styles/pages/FindCourses.module.css";
 import { FaSearch } from "react-icons/fa";
 
 export default function CourseSearch({ value, onChange }) {

@@ -168,7 +168,7 @@
   text-shadow: 1px 3px 0px black;
 }
 
-.filters {
+/* .filters {
   position: sticky;
   top: 100px;
   background: white;
@@ -183,7 +183,7 @@
 .cityGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 .pagination {
   display: flex;

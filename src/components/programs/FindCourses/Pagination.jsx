@@ -1,4 +1,4 @@
-import styles from "@/styles/FindCourses.module.css";
+import styles from "@/styles/pages/FindCourses.module.css";
 
 export default function Pagination({ page, totalPages, onChange }) {
   return (

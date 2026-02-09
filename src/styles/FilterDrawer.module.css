@@ -1,0 +1,52 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 50;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -360px;
+  width: 320px;
+  height: 100%;
+  background: white;
+  z-index: 60;
+  transition: 0.3s;
+  overflow-y: auto;
+}
+
+.open {
+  left: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.header button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Desktop hide */
+@media (min-width: 1201px) {
+  .drawer,
+  .backdrop {
+    display: none;
+  }
+}

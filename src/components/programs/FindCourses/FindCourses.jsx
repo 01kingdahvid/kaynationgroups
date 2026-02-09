@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import programs from "@/data/programs.json";
-import styles from "@/styles/FindCourses.module.css";
+import styles from "@/styles/pages/FindCourses.module.css";
 
 
 import CourseFilters from "./CourseFilters";
@@ -14,9 +14,12 @@ export default function FindCoursesPage() {
     const [search, setSearch] = useState("");
     const [filters, setFilters] = useState({
         studyLevel: [],
+        destination: [],
+        studyMode: [],
         city: [],
+        institution: [],
         tuitionMin: 7000,
-        tuitionMax: 22000
+        tuitionMax: 23500
     });
 
     const [page, setPage] = useState(1);
