@@ -37,7 +37,7 @@ export default function CourseCard({ course }) {
         width: "100%",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
       }}>
         <Link href={`/programs/${course.slug}`}>
           <button className={styles.detailsBtn}>

@@ -166,6 +166,10 @@
   color: white;
   font-weight: 800;
   text-shadow: 1px 3px 0px black;
+  cursor: pointer;
+}
+:any-link{
+  text-decoration: none;
 }
 
 /* .filters {

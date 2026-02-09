@@ -1,0 +1,166 @@
+.wrapper {
+  padding: 60px 40px;
+  margin-top: -6rem;
+}
+
+.intro {
+  margin-bottom: 3rem;
+}
+
+.applyForm {
+  position: relative;
+  padding: 2.5rem;
+  background: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.applyForm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background:
+    /* TOP */
+    repeating-linear-gradient(
+        90deg,
+        #aa56b8,
+        #aa56b8 8px,
+        transparent 8px,
+        transparent 16px
+      )
+      top left / 100% 3px no-repeat,
+    /* BOTTOM */
+    repeating-linear-gradient(
+        90deg,
+        #aa56b8,
+        #aa56b8 8px,
+        transparent 8px,
+        transparent 16px
+      )
+      bottom left / 100% 3px no-repeat,
+    /* LEFT */
+    repeating-linear-gradient(
+        180deg,
+        #aa56b8,
+        #aa56b8 8px,
+        transparent 8px,
+        transparent 16px
+      )
+      top left / 3px 100% no-repeat,
+    /* RIGHT */
+    repeating-linear-gradient(
+        180deg,
+        #aa56b8,
+        #aa56b8 8px,
+        transparent 8px,
+        transparent 16px
+      )
+      top right / 3px 100% no-repeat;
+}
+
+.step h6 {
+  font-family: Catamaran, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(17, 17, 17);
+  margin-bottom: 1rem;
+}
+
+.step p {
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(27, 25, 25);
+}
+
+.step ul {
+  list-style: none;
+  padding: 1.5rem 2.5rem;
+  margin: 0;
+}
+
+.step li {
+  display: flex;
+  align-items: start;
+  margin-bottom: 14px;
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(27, 25, 25);
+}
+
+.moduleBullet {
+  width: 20px;
+  height: 8px;
+  background: #facc15;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepContent h5 {
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(27, 25, 25);
+  margin-bottom: 1rem;
+  margin-top: -5px;
+}
+
+.noteContent {
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(27, 25, 25);
+}
+
+.note_bold {
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 34px;
+  color: rgb(27, 25, 25);
+}
+
+.noteQuickLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.noteQuickLinks :any-link {
+  display: inline-flex;          /* KEY — shrink to content */
+  align-self: flex-start;        /* Prevent stretch in flex column */
+
+  text-decoration: none;
+
+  padding: 6px 14px;             /* Gives chip shape */
+  border-bottom: 3px solid #aa56b8;
+
+  border-radius: 10px;           /* Your requested radius */
+
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  color: rgb(181, 55, 197) !important;
+
+  transition: all 0.25s ease;
+}
+
+.noteQuickLinks :any-link:hover {
+  background: rgba(170, 86, 184, 0.08);
+  transform: translateY(-1px);
+}
+

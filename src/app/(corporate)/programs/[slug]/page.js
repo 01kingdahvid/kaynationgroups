@@ -3,6 +3,7 @@ import Navbar from '@/components/layout/Navbar/Navbar'
 import ProgramHero from '@/components/shared/ProgramHero/ProgramHero'
 import programs from '@/data/programs.json'
 import styles from '@/styles/pages/CourseDetail.module.css'
+import Link from 'next/link'
 import Script from 'next/script'
 // import PageHero from '@/components/shared/PageHero/PageHero'
 
@@ -141,7 +142,9 @@ export default async function CourseDetailPage ({ params }) {
           )}
 
         <section className={styles.programDetail_apply}>
-          <button className={styles.applyBtn}>APPLY NOW</button>
+          <Link href='/programs/apply' className={styles.applyBtn}>
+            APPLY NOW
+          </Link>
         </section>
       </main>
     </>

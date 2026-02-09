@@ -67,10 +67,10 @@
 ============================= */
 
 .accentLine {
-  width: 6px;
-  height: 140px;
+  width: 8px;
+  height: 230px;
   border-radius: 6px;
-  background: linear-gradient(180deg, #8b2bd3, #ff4fd8);
+  background: linear-gradient(180deg, #8b2bd3, #b437c6);
 }
 
 /* =============================
