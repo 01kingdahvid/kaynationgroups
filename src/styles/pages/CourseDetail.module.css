@@ -12,7 +12,7 @@
 
 .programDetail_header h2 {
   margin-top: 10px;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 /* INFO GRID */
@@ -26,21 +26,36 @@
 .programDetail_infoGrid label {
   display: block;
   margin-bottom: 8px;
+  font-family: Catamaran, sans-serif;
+  font-size: 14px;
   font-weight: 600;
+  line-height: normal;
+  color: rgb(34, 34, 34);
 }
 
 .pill {
   display: inline-block;
   padding: 10px 18px;
-  background: linear-gradient(90deg,#9333EA,#C026D3);
-  color: white;
+  background: linear-gradient(90deg, #b337c6bd, #b437c6);
   border-radius: 999px;
-  font-size: 14px;
+  font-family: Catamaran, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
 }
 
 /* MODULES */
 .programDetail_modules {
   margin-top: 60px;
+}
+
+.programDetail_modules h3 {
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 34px;
+  color: rgb(27, 25, 25);
 }
 
 .moduleYear {
@@ -49,7 +64,12 @@
 
 .moduleYear h4 {
   margin-bottom: 15px;
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
   font-weight: 600;
+  line-height: 34px;
+  color: rgb(27, 25, 25);
+  font-style: italic;
 }
 
 .moduleYear ul {
@@ -60,12 +80,17 @@
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(27, 25, 25);
 }
 
 .moduleBullet {
   width: 20px;
   height: 8px;
-  background: #FACC15;
+  background: #facc15;
   border-radius: 4px;
   margin-right: 12px;
 }
@@ -83,30 +108,32 @@
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
+  text-shadow: 2px 3px 2px 0 black;
 }
 
 /* BREAKPOINTS */
 
 /* Desktop >1200 */
-@media (min-width:1200px){}
+@media (min-width: 1200px) {
+}
 
 /* Tablet */
-@media (max-width:1200px){
-  .programDetail_infoGrid{
-    grid-template-columns: repeat(2,1fr);
+@media (max-width: 1200px) {
+  .programDetail_infoGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Small Tablet */
-@media (max-width:768px){
-  .programDetail_infoGrid{
+@media (max-width: 768px) {
+  .programDetail_infoGrid {
     grid-template-columns: 1fr;
   }
 }
 
 /* Mobile */
-@media (max-width:480px){
-  .programDetail_header h1{
-    font-size:26px;
+@media (max-width: 480px) {
+  .programDetail_header h1 {
+    font-size: 26px;
   }
 }
