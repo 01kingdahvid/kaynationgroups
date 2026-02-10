@@ -11,7 +11,7 @@ export default function LocationBlock() {
                 <div className={styles.amoeba2}></div>
 
                 <img
-                    src="/images/london-office.jpg"
+                    src="/images/shared/hero-section-bg1.jpg"
                     alt="London Office"
                 />
             </div>

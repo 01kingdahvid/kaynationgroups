@@ -3,13 +3,13 @@ import Navbar from '@/components/layout/Navbar/Navbar'
 import Opportunities from '@/components/our-services/Opportunities/Opportunities'
 import PageHero from '@/components/shared/PageHero/PageHero'
 
-export default function OpportunityPage () {
+export default function PartnershipPage () {
   return (
     <>
       <Navbar />
       <PageHero
-        title='KNES Opportunities'
-        subtitle='We help make your study dreams come true with amazing opportunities available! With our support, you’ll have access to the latest study opportunities and discounts'
+        title='Partner Institutions'
+        subtitle='Our close partnerships with university partners give us unique insider insights into their programmes, culture, student life, admissions processes and opportunities.'
         backgroundImage='/images/shared/services1.avif'
         showShareIcons={true}
       />

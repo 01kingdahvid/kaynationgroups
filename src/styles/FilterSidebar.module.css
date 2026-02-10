@@ -1,3 +1,9 @@
+.drawerSidebar {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  display: none;
+}
 .sidebar {
   background: white;
   padding: 24px;
@@ -38,4 +44,16 @@
 .rangeLabel {
   margin-top: 10px;
   font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .drawerSidebar{
+    display: block;
+  }
+
 }

@@ -8,11 +8,11 @@ export default function ServicesMainSection() {
     const [openIndex, setOpenIndex] = useState(null);
 
     const faqs = [
-        "What services does Study Now provide?",
-        "Is Study Now a UK-based education consultancy?",
-        "Does Study Now help with visas and university applications?",
+        "What services does Kaynation Educational Services provide?",
+        "Is Kaynation Educational Services a UK-based education consultancy?",
+        "Does KNES help with visas and university applications?",
         "Which countries does Study Now support students from?",
-        "Does Study Now provide support after enrolment?"
+        "Does Kaynation Educational Services provide support after enrolment?"
     ];
 
     const toggleFAQ = (index) => {
@@ -28,7 +28,7 @@ export default function ServicesMainSection() {
                     <div className={styles.header}>
                         <h1>Our Services</h1>
                         <p>
-                            Study Now is a UK-based international education consultancy providing
+                            Kaynation Educational Services is a UK-based international education consultancy providing
                             transparent, tech-enabled, and holistic support for students and families
                             pursuing global study opportunities.
                         </p>
@@ -39,7 +39,7 @@ export default function ServicesMainSection() {
                         <div className={styles.whiteCard}>
                             <h2>Who We Are & What We Do</h2>
                             <p>
-                                Study Now supports students and families through every stage of the
+                                Kaynation Educational Services supports students and families through every stage of the
                                 international education journey. Headquartered in the United Kingdom,
                                 we operate across Nigeria, Ghana, Kenya, and Türkiye.
                             </p>

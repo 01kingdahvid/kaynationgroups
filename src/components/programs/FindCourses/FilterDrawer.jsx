@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "@/styles/FilterDrawer.module.css";
-import CourseFilters from "./CourseFilters";
+import DrawerFilters from "./DrawerFilters";
 
 export default function FilterDrawer({ open, onClose, filters, setFilters }) {
   return (
@@ -17,7 +17,7 @@ export default function FilterDrawer({ open, onClose, filters, setFilters }) {
           <button onClick={onClose}>✕</button>
         </div>
 
-        <CourseFilters filters={filters} setFilters={setFilters} />
+        <DrawerFilters filters={filters} setFilters={setFilters} />
       </div>
     </>
   );

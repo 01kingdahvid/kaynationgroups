@@ -1,7 +1,7 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   pointer-events: none;
   transition: 0.3s;
@@ -15,7 +15,7 @@
 
 .drawer {
   position: fixed;
-  top: 0;
+  top: 5rem;
   left: -360px;
   width: 320px;
   height: 100%;
@@ -23,6 +23,7 @@
   z-index: 60;
   transition: 0.3s;
   overflow-y: auto;
+  animation: slideIn 0.3s ease forwards;
 }
 
 .open {
@@ -41,6 +42,15 @@
   background: none;
   font-size: 20px;
   cursor: pointer;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* Desktop hide */

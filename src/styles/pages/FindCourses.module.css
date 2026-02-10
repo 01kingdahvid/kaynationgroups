@@ -80,13 +80,15 @@
   box-shadow: none;
 }
 
-
 .searchWrap button {
   width: 60px;
   font-size: 1.5rem;
   border: none;
   background: #eeeeee;
   color: #aa56b8;
+}
+.mobileFilterBar {
+  display: none;
 }
 
 .grid {
@@ -168,7 +170,7 @@
   text-shadow: 1px 3px 0px black;
   cursor: pointer;
 }
-:any-link{
+:any-link {
   text-decoration: none;
 }
 
@@ -223,5 +225,19 @@
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .mobileFilterBar {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .mobileFilterBar button {
+    width: 100%;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    background: #aa56b8;
+    color: #eeeeee;
+    cursor: pointer;
+    padding: 0.8rem;
   }
 }

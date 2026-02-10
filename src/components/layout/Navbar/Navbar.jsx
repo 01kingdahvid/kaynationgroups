@@ -124,7 +124,7 @@ export default function Navbar() {
           </div>
 
           <div className={styles.mailText}>
-            <span>info@studynow.org.uk</span>
+            <span>info@kaynationseducationalserviceslimited.com</span>
             <small>Email Us</small>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function Navbar() {
                 <div className={styles.footerCol} style={{ animationDelay: '1.4s' }}>
                   <span><MailOutlined /></span>
                   <div className={styles.footerRow}>
-                    <p>info@studynow.org.uk</p>
+                    <p>info@kaynationseducationalserviceslimited.com</p>
                     <small>Email Us</small>
                   </div>
                 </div>

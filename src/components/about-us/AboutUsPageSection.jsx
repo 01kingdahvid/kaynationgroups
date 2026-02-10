@@ -8,7 +8,7 @@ export default function AboutUsPageSection() {
                 {/* ===== TOP GRADIENT CARD ===== */}
                 <div className={styles.topCard}>
                     <div className={styles.tabRow}>
-                        <span className={styles.tabPrimary}>About Study Now</span>
+                        <span className={styles.tabPrimary}>About KNES</span>
                         <span className={styles.tabHighlight}>Core Values</span>
                         <span className={styles.tabPrimary}>Our Approach</span>
                     </div>
@@ -16,7 +16,7 @@ export default function AboutUsPageSection() {
                     <div className={styles.topContent}>
                         <h1>A global partner in international education</h1>
                         <p>
-                            Study Now is an international education consultancy supporting students and
+                            Kaynation Educational Services is an international education consultancy supporting students and
                             families to access high-quality education opportunities worldwide.
                             Headquartered in Oxford, UK, we operate across key global markets,
                             combining local insight with structured guidance so students can make
@@ -36,10 +36,7 @@ export default function AboutUsPageSection() {
                         <h1>Who we are</h1>
                         <p>
                             Founded by experienced professionals from across the education and
-                            recruitment sector, Study Now was built on collaboration, deep market
-                            knowledge, and a commitment to doing things properly. We are not simply
-                            an application service. We are a long-term partner for students and
-                            families navigating international education pathways.
+                            recruitment sector, Kaynation Educational Services was built on collaboration, deep market knowledge, and a commitment to doing things properly. We are not simply an application service. We are a long-term partner for students and families navigating international education pathways.
                         </p>
                     </div>
 
@@ -132,7 +129,7 @@ export default function AboutUsPageSection() {
                     <div className={styles.vmCard}>
                         <h2>University opportunities</h2>
                         <p>
-                            Study Now works closely with a wide network of universities and pathway providers worldwide, with particular strength in the UK higher education market. Our experience spans foundation programmes, undergraduate degrees, postgraduate study, and specialist academic routes.
+                            Kaynation Educational Services works closely with a wide network of universities and pathway providers worldwide, with particular strength in the UK higher education market. Our experience spans foundation programmes, undergraduate degrees, postgraduate study, and specialist academic routes.
 
                             From course selection and application strategy to documentation, deadlines, and enrolment, our consultants support students through every stage with clear communication and professional care.
                         </p>
@@ -143,7 +140,7 @@ export default function AboutUsPageSection() {
                 <div className={styles.bottomCard}>
                     <h2>Our approach</h2>
                     <p>
-                        At Study Now, success is not measured by volume alone, but by outcomes.
+                        At KNES, success is not measured by volume alone, but by outcomes.
                         We believe in honest advice, structured processes, and building trust
                         with students, families, and partners alike.
                     </p>

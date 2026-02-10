@@ -1,0 +1,64 @@
+.section {
+  padding: 0 3rem;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+}
+
+.content p {
+  font-family: Catamaran, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(27, 25, 25);
+}
+
+.backToButton {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.backToButton :any-link{
+    background: linear-gradient(90deg, #ffa513, #ffa513);
+  border: none;
+  /* padding: 10px; */
+  border-radius: 999px;
+  max-width: 200px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: Catamaran, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 2px 0 #b23ebd;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.087);  
+}
+
+.backToButton button {
+  background: linear-gradient(90deg, #ffa513, #ffa513);
+  border: none;
+  /* padding: 10px; */
+  border-radius: 999px;
+  max-width: 200px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: Catamaran, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 2px 0 #b23ebd;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.087);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+}

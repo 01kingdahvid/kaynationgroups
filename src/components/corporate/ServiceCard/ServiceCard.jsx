@@ -1,21 +1,25 @@
 import Image from "next/image";
 import styles from "./ServiceCard.module.css";
+import Link from "next/link";
 
 const services = [
     {
-        title: "Study Now Opportunities",
+        title: "Kaynation Educational Services Opportunities",
         desc: "We help make your study dreams come true with amazing opportunities available! With our support, you’ll have access to the latest study opportunities and discounts",
         img: "/images/shared/hero-section-bg1.jpg",
+        link: "/our-services/opportunities", // Add the link for this service
     },
     {
         title: "Partner Institutions",
         desc: "Our close partnerships with university partners give us unique insider insights into their programmes, culture, student life, admissions processes and opportunities.",
         img: "/images/shared/hero-section-bg1.jpg",
+        link: "/our-services/partnerships-info", // Add the link for this service
     },
     {
         title: "Visa Application Assistance",
         desc: "We consider important factors like your budget, academic strengths, personal interests, and more; while aligning with the standards set by universities and governing bodies.",
         img: "/images/shared/hero-section-bg1.jpg",
+        link: "/our-services/visa-application", // Add the link for this service
     },
 ];
 
@@ -43,7 +47,11 @@ export default function ServiceCards() {
                                     <h1 className={styles.title}>{service.title}</h1>
                                     <p className={styles.desc}>{service.desc}</p>
                                     <div className="" style={{ alignContent: "center", textAlign: "center" }}>
-                                        <button className={styles.cta}>Find Out More</button>
+                                        <Link href={service.link} passHref>
+
+                                            <button className={styles.cta}>Find Out More</button>
+
+                                        </Link>
                                     </div>
 
                                 </div>

@@ -2,6 +2,14 @@ import Image from "next/image";
 import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
+    // Pre-generate random values for the particles
+const particles = Array.from({ length: 25 }, () => ({
+  cx: Math.random() * 140,
+  cy: Math.random() * 80,
+  r: Math.random() * 2 + 0.5,
+}));
+
+
     return (
         <>
             <section className={styles.aboutSection}>
@@ -29,18 +37,19 @@ export default function AboutUs() {
                             </div>
 
                             {/* SVG PARTICLES */}
+                            {/* SVG PARTICLES */}
                             <svg
                                 className={styles.particles}
                                 width="140"
                                 height="80"
                                 viewBox="0 0 140 80"
                             >
-                                {[...Array(25)].map((_, i) => (
+                                {particles.map((particle, i) => (
                                     <circle
                                         key={i}
-                                        cx={Math.random() * 140}
-                                        cy={Math.random() * 80}
-                                        r={Math.random() * 2 + 0.5}
+                                        cx={particle.cx}
+                                        cy={particle.cy}
+                                        r={particle.r}
                                     />
                                 ))}
                             </svg>
@@ -48,9 +57,9 @@ export default function AboutUs() {
 
                         {/* PARAGRAPH */}
                         <p className={styles.desc}>
-                            Study Now is a global education consultancy headquartered in London, UK, with a solid presence in Nigeria, Ghana, Kenya, and Qatar. We are also rapidly expanding to other regions.   <br /> <br />
+                            Kaynation Educational Services is a global education consultancy headquartered in London, UK, with a solid presence in Nigeria, Ghana, Kenya, and Qatar. We are also rapidly expanding to other regions.   <br /> <br />
                             We offer expert consultation to potential students from different backgrounds to help them achieve their goal of studying Abroad. We partner with a large number of accredited universities in the UK, USA, Canada and Europe. We are meticulous in the admissions planning and execution process, from consultation to university and visa application.  <br /> <br /> <br />
-                            We firmly believe that our collaborative effort in the Study Now team bridges the gap between students and the life-changing study opportunities they seek. Our services are student-centric, and we pride ourselves on being proactive in communications, problem-solving, and helping our students make well-informed decisions.
+                            We firmly believe that our collaborative effort in the KNES team bridges the gap between students and the life-changing study opportunities they seek. Our services are student-centric, and we pride ourselves on being proactive in communications, problem-solving, and helping our students make well-informed decisions.
                             <br /><br /> <br />
                             Our expert academic counsellors make the route to global education not only achievable but also exciting.
                         </p>

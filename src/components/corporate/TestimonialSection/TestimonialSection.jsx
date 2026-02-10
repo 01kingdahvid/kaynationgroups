@@ -11,7 +11,7 @@ const testimonials = [
         location: "Lagos, Nigeria",
         work: "Software Engineer - UK",
         image: "/images/shared/hero-section-bg1.jpg",
-        text: "Study Now made my UK admission seamless. From documentation to visa preparation, everything was handled professionally."
+        text: "Kaynation Educational Services made my UK admission seamless. From documentation to visa preparation, everything was handled professionally."
     },
     {
         name: "Amaka Nwosu",
@@ -25,7 +25,7 @@ const testimonials = [
         location: "Ibadan, Nigeria",
         work: "Data Analyst - London",
         image: "/images/shared/hero-section-bg1.jpg",
-        text: "I never imagined studying abroad could be this smooth. Study Now exceeded my expectations."
+        text: "I never imagined studying abroad could be this smooth. Kaynation Educational Services exceeded my expectations."
     }
 ];
 
@@ -76,7 +76,7 @@ export default function TestimonialSection() {
                         </div>
 
                         <p>
-                            At Study Now, our legacy is told through the triumphs and tales of our students.
+                            At KNES, our legacy is told through the triumphs and tales of our students.
                             Having served thousands of eager international scholars, our team has been the guiding force behind many dreams realized,
                             facilitating their journeys to prominent UK universities.
                             <br /><br />

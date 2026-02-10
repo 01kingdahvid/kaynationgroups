@@ -75,7 +75,7 @@ export default function KayGroupsHero() {
               <br />Apply to the university that fits your goals.
             </p>
 
-            <Link href="/contact" className={styles.ctaBtn}>
+            <Link href="/programs/apply" className={styles.ctaBtn}>
               APPLY NOW
             </Link>
           </div>

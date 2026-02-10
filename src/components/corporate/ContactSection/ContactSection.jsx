@@ -141,7 +141,7 @@ export default function ContactSection() {
                         <div className={styles.header}>
                             <h1 className={styles.heading}>Let&apos;s Shape Your Academic Future</h1>
                             <p className={styles.subheading}>
-                                With Study Now, your global education dreams are within reach. We&apos;re here to offer
+                                With KNES, your global education dreams are within reach. We&apos;re here to offer
                                 tailored advice and steadfast support tailored to your unique aspirations.
                             </p>
                             <p className={styles.callToAction}>
